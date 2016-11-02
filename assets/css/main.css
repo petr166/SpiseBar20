@@ -1,1 +1,49 @@
+.overview-row {
+  min-height: 100vh;
+  color: #fff;
+  background: #222;
+  background-image: url('../img/overview.jpg');
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+}
 
+/* CENTER THE FUCKING BOX */
+.overview-box {
+  font-weight: 400;
+  font-family: 'Roboto', sans-serif;
+  text-transform: uppercase;
+  font-size: 1.5em;
+  letter-spacing: 0.1em;
+}
+
+#main_title {
+  font-weight: 900;
+  font-size: 5em;
+  letter-spacing: 0.2em;
+  margin-bottom: 0.4em;
+}
+
+#restaurant_label {
+  font-weight: 700;
+  font-size: 1.5em;
+}
+
+#bookButt {
+  margin-top: 1.3em;
+  font-size: 0.8em;
+  border-color: white;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+#bookButt:hover {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+#downArrow {
+  margin-top: 1em;
+  font-size: 2em;
+  border-color: transparent;
+  background-color: transparent;
+}
