@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>Spise/Bar 20</title>
+    <title>Spise Bar 20</title>
 
     <!-- Stylesheets -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
@@ -17,23 +17,26 @@
 
   <!-- BODY -->
   <body>
+    <script>document.body.className += ' fade-out';</script>
     <!-- Page container -->
-    <div class="container-fluid">
+    <div id="page_container" class="container-fluid">
 
       <!-- Overview row -->
       <div class="row overview-row">
         <!-- Overview box -->
         <div class="col-md-12 overview-box">
-          <h1 id="main_title">Spise/Bar 20</h1>
-          <p id="restaurant_label" class="main-description">Restaurant/Bar<p>
-          <p class="main-description">Rantzausgade 20, 2200 CPH.</p>
-          <p class="main-description">MON - SAT 17:00 - 24:00 (SUN closed)</p>
-          <p class="main-description">Tel: 35 36 02 90</p>
+          <h1 id="main_title">Spise Bar 20</h1>
+          <p id="restaurant_label">Restaurant/Bar<p>
+          <p>Rantzausgade 20, 2200 CPH.</p>
+          <p>MON - SAT 17:00 - 24:00 (SUN closed)</p>
+          <p>Tel: 35 36 02 90</p>
 
-          <a id="bookButt" target="_blank" class="btn btn-info main-description" href="http://dinnerbooking.com/dk/da-DK/r685/spise-bar-nr-20" role="button">Book a table</a>
+          <!-- "Book a table" BUTT -->
+          <a id="book_butt" target="_blank" class="btn btn-info" href="http://dinnerbooking.com/dk/da-DK/r685/spise-bar-nr-20" role="button">Book a table</a>
           <br>
 
-          <a id="downArrow" target="_blank" class="btn btn-info main-description" href="#" role="button">
+          <!-- "To the about" arrow -->
+          <a id="down_arrow" class="btn btn-info" href="#" role="button">
             <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span>
           </a>
         </div> <!-- /overview-box -->

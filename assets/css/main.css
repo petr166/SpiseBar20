@@ -1,21 +1,31 @@
+body {
+    opacity: 1;
+    transition: 2s opacity;
+}
+body.fade-out {
+    opacity: 0;
+    transition: none;
+}
+
 .overview-row {
   min-height: 100vh;
   color: #fff;
-  background: #222;
   background-image: url('../img/overview.jpg');
   background-position: 50%;
   background-repeat: no-repeat;
   background-size: cover;
-  text-align: center;
+
+  padding-bottom: 5%;
+  padding-top: 5%;
 }
 
-/* CENTER THE FUCKING BOX */
 .overview-box {
   font-weight: 400;
   font-family: 'Roboto', sans-serif;
   text-transform: uppercase;
-  font-size: 1.5em;
+  font-size: 3vh;
   letter-spacing: 0.1em;
+  text-align: center;
 }
 
 #main_title {
@@ -23,6 +33,7 @@
   font-size: 5em;
   letter-spacing: 0.2em;
   margin-bottom: 0.4em;
+  display: none;
 }
 
 #restaurant_label {
@@ -30,19 +41,19 @@
   font-size: 1.5em;
 }
 
-#bookButt {
+#book_butt {
   margin-top: 1.3em;
   font-size: 0.8em;
   border-color: white;
   background-color: rgba(0, 0, 0, 0.5);
 }
 
-#bookButt:hover {
+#book_butt:hover {
   background-color: rgba(0, 0, 0, 0.7);
 }
 
-#downArrow {
-  margin-top: 1em;
+#down_arrow {
+  margin-top: 1.2em;
   font-size: 2em;
   border-color: transparent;
   background-color: transparent;
