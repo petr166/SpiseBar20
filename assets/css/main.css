@@ -8,13 +8,13 @@ body.fade-out {
 }
 
 .clickable {
-  transition: all 0.3s ease 0s;
+  transition: all 0.5s ease 0s;
 }
 
 .overview-row {
   min-height: 100vh;
   color: #fff;
-  background-image: url('../img/overview.jpg');
+  background-image: url('../../img/overview.jpg');
   background-position: 50%;
   background-repeat: no-repeat;
   background-size: cover;
