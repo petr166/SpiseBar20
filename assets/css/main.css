@@ -7,6 +7,10 @@ body.fade-out {
     transition: none;
 }
 
+.clickable {
+  transition: all 0.3s ease 0s;
+}
+
 .overview-row {
   min-height: 100vh;
   color: #fff;
