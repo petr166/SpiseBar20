@@ -27,14 +27,14 @@ body.fade-out {
   font-weight: 400;
   font-family: 'Roboto', sans-serif;
   text-transform: uppercase;
-  font-size: 3vh;
+  font-size: 2.8vh;
   letter-spacing: 0.1em;
   text-align: center;
 }
 
 #main_title {
   font-weight: 900;
-  font-size: 5em;
+  font-size: 5.3em;
   letter-spacing: 0.2em;
   margin-bottom: 0.4em;
   display: none;
@@ -61,4 +61,54 @@ body.fade-out {
   font-size: 2em;
   border-color: transparent;
   background-color: transparent;
+}
+
+#aboutSection{
+    background-color: #71ab97;
+    min-height: 100vh;
+}
+
+#aboutTitle{
+    padding-top: .3em;
+}
+#aboutTitle:after {
+    display:block;
+    clear:both;
+    content : "";
+    position: relative;
+    left    : 0;
+    bottom  : 0;
+    max-width:2em;
+    height  : 1px;
+    width   : 50%;  /* or 100px */
+    border-bottom:2px solid black;
+    margin:0 auto;
+    padding:17px 0px;
+}
+.text-block{
+    font-family: 'Didact Gothic', sans-serif;
+    font-size: 1.5em;
+    line-height: 1.3333em;
+    margin: 1.333em 0;
+
+}
+.text-block--mid{
+    margin: 0 auto;
+    max-width: 50rem;
+}
+
+p {
+    display: block;
+    -webkit-margin-before: 1em;
+    -webkit-margin-after: 1em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+}
+
+.carousel-inner > .item > img, .carousel-inner > .item > a > img {
+    width: 100%;
+}
+
+#carousel {
+  min-height: 100vh;
 }

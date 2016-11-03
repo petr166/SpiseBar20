@@ -12,10 +12,10 @@ function showContent() {
 //add smooth scroll effect when jumping to sections
 function smoothScroll() {
   var $root = $('html, body');
-  $('a').click(function(){
+  $('.scrolly').click(function(){
     $root.animate({
         scrollTop: $( $(this).attr('href') ).offset().top
-    }, 500);
+    }, 800);
     return false;
   });
 }
