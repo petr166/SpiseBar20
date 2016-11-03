@@ -12,6 +12,7 @@ body.fade-out {
 }
 
 .overview-row {
+  min-width: 100vw;
   min-height: 100vh;
   color: #fff;
   background-image: url('../../img/overview.jpg');
@@ -65,6 +66,7 @@ body.fade-out {
 
 #aboutSection{
     background-color: #71ab97;
+    min-width: 100vw;
     min-height: 100vh;
 }
 
@@ -109,6 +111,6 @@ p {
     width: 100%;
 }
 
-#carousel {
-  min-height: 100vh;
+.slideshow-row {
+  min-width: 100vw;
 }
