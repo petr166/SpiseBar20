@@ -1,7 +1,7 @@
-$(function() {
+window.onload = function() {
   showContent();
   smoothScroll();
-});
+};
 
 //fade in the home page
 function showContent() {
