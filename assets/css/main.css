@@ -1,6 +1,5 @@
 *{
-  font-weight: 400;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Didact Gothic', sans-serif;
 }
 
 #page_container {
@@ -55,6 +54,7 @@
 #book_butt {
   margin-top: 1.3em;
   font-size: 0.8em;
+  border-width: .1em;
   border-color: white;
   background-color: rgba(0, 0, 0, 0.5);
 }
@@ -108,7 +108,7 @@
 p {
     display: block;
     -webkit-margin-before: 1em;
-    -webkit-margin-after: 1em;
+    -webkit-margin-after: 1.5em;
     -webkit-margin-start: 0px;
     -webkit-margin-end: 0px;
 }
@@ -129,13 +129,57 @@ p {
 }
 
 #menu_img_col {
-  min-height: inherit;
+  min-height: 50vh;
   background-image: url('../../img/menu.jpg');
   background-position: 100%;
   background-size: cover;
 }
 
+@media only screen and (min-width: 768px) {
+    #menu_img_col {
+      min-height: inherit;
+    }
+}
+
 #menu_overview_col {
-  background-color: #2e3842;
-  font-size: 2vh;
+  min-height: inherit;
+  font-size: 1.5em;
+  margin: 0 auto;
+  max-width: 85%;
+  padding: 5%;
+}
+
+#menu_title {
+  letter-spacing: 0.1em;
+}
+#menu_title:after {
+    display:block;
+    clear:both;
+    content : "";
+    position: relative;
+    left    : 0;
+    bottom  : 0;
+    max-width:2.2em;
+    height  : 1px;
+    width   : 50%;  /* or 100px */
+    border-bottom:2px solid white;
+    margin:0 auto;
+    padding:15px 0px;
+}
+
+#menu_text {
+  margin: 1.4em auto;
+}
+
+#menu_buttons > button {
+  margin: 1.3em .5em;
+  width: 5.2em;
+  font-size: .9em;
+  border-width: .1em;
+  border-color: white;
+  background-color: rgba(0, 191, 255, 0.4);
+}
+
+#menu_buttons > button:hover {
+  background-color: rgba(0, 191, 255, 0.6);
 }
