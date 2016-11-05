@@ -5,8 +5,8 @@ window.onload = function() {
 
 //fade in the home page
 function showContent() {
-  $('body').removeClass('fade-out'); //fade-in the body
-  $('#main_title').fadeIn(3000); //fade-in the title(slow)
+  $('#page_container').removeClass('fade-out'); //fade-in the body
+  setTimeout(function() {$('#main_title').removeClass('fade-out');}, 500); //fade-in the title(slow)
 }
 
 //add smooth scroll effect when jumping to sections

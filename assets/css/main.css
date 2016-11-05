@@ -1,8 +1,8 @@
-body {
+#page_container {
     opacity: 1;
     transition: 2s opacity;
 }
-body.fade-out {
+#page_container.fade-out, #main_title.fade-out {
     opacity: 0;
     transition: none;
 }
@@ -34,11 +34,12 @@ body.fade-out {
 }
 
 #main_title {
+  opacity: 1;
+  transition: 3s opacity;
   font-weight: 900;
   font-size: 5.3em;
   letter-spacing: 0.2em;
   margin-bottom: 0.4em;
-  display: none;
 }
 
 #restaurant_label {
