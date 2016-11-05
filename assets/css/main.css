@@ -1,3 +1,8 @@
+*{
+  font-weight: 400;
+  font-family: 'Roboto', sans-serif;
+}
+
 #page_container {
     opacity: 1;
     transition: 2s opacity;
@@ -114,4 +119,23 @@ p {
 
 .slideshow-row {
   min-width: 100vw;
+}
+
+#menu_row {
+  min-width: 100vw;
+  min-height: 100vh;
+  color: #fff;
+  background-color: #2e3842;
+}
+
+#menu_img_col {
+  min-height: inherit;
+  background-image: url('../../img/menu.jpg');
+  background-position: 100%;
+  background-size: cover;
+}
+
+#menu_overview_col {
+  background-color: #2e3842;
+  font-size: 2vh;
 }
