@@ -20,3 +20,21 @@ function smoothScroll() {
       event.preventDefault();
   });
 }
+
+//add functionality for the navibar
+function navibar() {
+  $('#menu_toggle').click(function(e) {
+    e.preventDefault();
+    $('#page_container').toggleClass("sidebar-displayed");
+  });
+}
+
+/* Set the width of the side navigation to 250px */
+function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+}
+
+/* Set the width of the side navigation to 0 */
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+}
