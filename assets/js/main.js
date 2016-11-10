@@ -1,23 +1,23 @@
-$(function() {
+window.onload = function() {
   showContent();
   smoothScroll();
-  loadImages();
-});
+};
 
 //fade in the home page
 function showContent() {
-  $('body').removeClass('fade-out'); //fade-in the body
-  $('#main_title').fadeIn(3000); //fade-in the title(slow)
+  $('#page_container').removeClass('fade-out'); //fade-in the body
+  setTimeout(function() {$('#main_title').removeClass('fade-out');}, 500); //fade-in the title(slow)
 }
 
 //add smooth scroll effect when jumping to sections
 function smoothScroll() {
   var $root = $('html, body');
-  $('.scrolly').click(function(){
-    $root.animate({
-        scrollTop: $( $(this).attr('href') ).offset().top
-    }, 800);
-    return false;
+  $('a.scrolly').bind('click', function(event) {
+      var $anchor = $(this);
+      $root.stop().animate({
+          scrollTop: $($anchor.attr('href')).offset().top
+      }, 1500, 'easeInOutExpo');
+      event.preventDefault();
   });
 }
 
