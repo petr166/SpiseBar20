@@ -12,7 +12,7 @@ body.fade-out {
 }
 
 .overview-row {
-  min-width: 100vw;
+  max-width: 100vw;
   min-height: 100vh;
   color: #fff;
   background-image: url('../../img/overview.jpg');
@@ -66,11 +66,14 @@ body.fade-out {
 
 #aboutSection{
     background-color: #71ab97;
-    min-width: 100vw;
+    max-width: 100vw;;
     min-height: 100vh;
 }
 
 #aboutTitle{
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  font-size: 30px;
     padding-top: .3em;
 }
 #aboutTitle:after {
@@ -99,7 +102,7 @@ body.fade-out {
     max-width: 50rem;
 }
 
-p {
+#mainText {
     display: block;
     -webkit-margin-before: 1em;
     -webkit-margin-after: 1em;
@@ -108,9 +111,120 @@ p {
 }
 
 .carousel-inner > .item > img, .carousel-inner > .item > a > img {
-    width: 100%;
+  
 }
 
-.slideshow-row {
-  min-width: 100vw;
+.carousel-section{
+  max-width: 100vw;
+  height: 100vh;
 }
+
+
+.menu-category-name {
+  font-family: 'Playball', cursive;
+  font-weight: 500;
+  font-size: 6vh;
+}
+
+.red-wine, .white-wine, .rose-wine {
+text-align: center;
+}
+
+.red-wine {
+  border-right: 1px solid #ccc;
+  border-left: 1px solid #ccc;
+}
+
+.wine-item {
+  padding-top: 4%;
+  width: 100%;
+  padding-left: 9%;
+
+}
+
+.wine-name {
+
+  margin: 0px;
+  font-size: 3vh;
+  font-family: 'Khand';
+  display: inline;
+  vertical-align: top;
+  line-height: 28px;
+  text-align: left;
+
+}
+
+.wine-price {
+  font-size: 3vh;
+  font-family: 'Khand';
+  display: inline;
+  vertical-align: top;
+  line-height: 28px;
+  text-align: right;
+}
+
+.wine-description {
+  font-family: 'Didact Gothic', sans-serif;
+  color: #938372;
+  font-size: 2vh;
+  text-align: justify;
+  /*padding-left: 7%;*/
+}
+
+.rose-wine div {
+  padding-top: 0px;
+}
+
+#sbLogo {
+  max-width: 300px;
+  height: auto;
+}
+
+#sbLogoDiv {
+  padding: 13% 0 0 0;
+}
+
+#rose {
+  margin: 0px;
+  padding: .3em 0 .7em 0;
+}
+
+/*.wine-item{
+    margin-bottom: 50px;
+    overflow: hidden;
+    position: relative;
+    display: block;
+}*/
+
+/*.wine-item .wine-name, .wine-item .wine-price {
+    font-size: 22px;
+    font-family: 'Khand';
+}*/
+
+/*
+.wine-item .wine-name {
+    display: inline-block;
+    padding-right: 10px;
+    max-width: 80%;
+    margin: 0 0 15px;
+}
+
+
+.wine-item .wine-price{
+
+  padding-left: 10px;
+right: 0;
+position: absolute;
+margin-top: -3px;
+}
+
+.wine-item .wine-description {
+    display: block;
+    clear: both;
+    color: #938372;
+}
+
+.wine-item {
+  width: 70%;
+}
+*/
