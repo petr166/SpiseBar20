@@ -8,6 +8,10 @@
     transition: none;
 }
 
+#page_container.blured {
+  opacity: .7;
+}
+
 .clickable {
   transition: all 0.5s ease 0s;
 }
@@ -83,7 +87,7 @@
   letter-spacing: 0.1em;
 }
 
-.section-title:after {
+.section-title::after {
   display:block;
   clear:both;
   content : "";
@@ -314,4 +318,123 @@ margin-top: -3px;
 
 #menu_buttons > button:hover {
   background-color: rgba(64, 46, 34, 1);
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background: radial-gradient(transparent, #402E22);
+    background-color: rgba(120, 86, 64, .9);
+    overflow: hidden;
+    padding-top: 40px;
+    transition: 0.5s;
+}
+
+.sidebar-nav {
+  padding: 0 0 0 40px;
+  list-style: none;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 8px;
+    text-decoration: none;
+    font-size: 18px;
+    color: white;
+    display: block;
+    transition: 0.3s
+}
+
+.sidenav a:hover, .offcanvas a:focus{
+    color: rgba(255, 255, 255, .5);
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+    .sidenav {padding-top: 60px;}
+    .sidenav a {font-size: 21px;}
+}
+
+@media (min-width: 768px) {
+  .sidenav {padding-top: 60px;}
+  .sidenav a {font-size: 25px;}
+}
+
+#navright {
+  float: right;
+}
+
+.navbar-default .navbar-brand{
+  color: white;
+  font-size: 16px;
+  padding: 15px 10px;
+}
+
+.navbar-default .navbar-brand:hover {
+  color: white;
+}
+
+#navibar {
+  background-color: transparent;
+  transition: all 0.5s ease;
+  height: 45px;
+}
+
+#navibar.strong {
+  background: radial-gradient(transparent, #402E22);
+  background-color: rgba(120, 86, 64, .99);
+}
+
+#navright_span {
+  opacity: 0;
+  padding-right: 0;
+}
+
+#navright_span:hover {
+  color: white;
+}
+
+@media (min-width: 768px) {
+  #navibar {
+    height: 52px;
+    padding: 0 10px;
+  }
+
+  .navbar-default .navbar-brand{
+    font-size: 18px;
+  }
+
+  #navright_span {
+    opacity: 1;
+  }
+}
+
+@media (min-width: 992px) {
+  #navibar {
+    height: 55px;
+    padding: 0 10px;
+  }
+
+  .navbar-default .navbar-brand{
+    font-size: 20px;
+  }
+}
+
+#my_nav_brand {
+  opacity: 0;
+  color: white;
+  transition: 0.5s;
+}
+
+#my_nav_brand.displayed {
+  opacity: 1;
 }
