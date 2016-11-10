@@ -2,6 +2,7 @@ body {
     opacity: 1;
     transition: 2s opacity;
 }
+
 body.fade-out {
     opacity: 0;
     transition: none;
@@ -12,7 +13,7 @@ body.fade-out {
 }
 
 .overview-row {
-  min-width: 100vw;
+  max-width: 100vw;
   min-height: 100vh;
   color: #fff;
   background-image: url('../../img/overview.jpg');
@@ -66,7 +67,7 @@ body.fade-out {
 
 #aboutSection{
     background-color: #71ab97;
-    min-width: 100vw;
+    max-width: 100vw;;
     min-height: 100vh;
 }
 
@@ -99,7 +100,7 @@ body.fade-out {
     max-width: 50rem;
 }
 
-p {
+#mainText {
     display: block;
     -webkit-margin-before: 1em;
     -webkit-margin-after: 1em;
@@ -111,6 +112,150 @@ p {
     width: 100%;
 }
 
-.slideshow-row {
-  min-width: 100vw;
+.slideshow-row, .cocktail-row{
+  max-width: 100vw;
 }
+
+#wineSection {
+
+  /*padding-left: 3%*/
+}
+
+.red-wine, .white-wine {
+text-align: center;
+}
+
+.wine-item, .cocktail-item{
+  padding-top: 4%;
+  width: 100%;
+  padding-left: 9%;
+
+}
+.beer-item{
+    width:100%;
+    padding-left: 9%;
+    padding-top:1.5%;;
+}
+#bottle-beers{
+    padding-top:4%;
+}
+.cocktail-name{
+    text-transform: uppercase;
+}
+.drink-type{
+    font-family: 'Playball', cursive;
+    font-weight: 500;
+    font-size: 30px;
+}
+.wine-name, .cocktail-name, .beer-name {
+
+  margin: 0px;
+  font-family: 'Khand';
+    font-size:18px;
+  display: inline;
+  vertical-align: top;
+  line-height: 28px;
+  text-align: left;
+
+}
+.wine-price, .cocktail-price, .beer-price {
+  font-family: 'Khand';
+    font-size:18px;
+  display: inline;
+  vertical-align: top;
+  line-height: 28px;
+  float: right;
+    
+}
+@media(min-width: 768px){
+    .beer-name, .beer-price, .cocktail-name, .cocktail-price{    
+        font-size:20px;
+    }
+    
+}
+@media(min-width: 992px){
+    .beer-name, .beer-price, .cocktail-name, .cocktail-price{
+        font-size:20px;
+    }
+    .beer-item{
+        width:120%;
+    }
+    
+    
+    
+}
+@media(min-width:1200px){
+    .beer-name, .beer-price, .cocktail-name, .cocktail-price{
+        font-size:20px;
+        
+    }
+    .cocktails-row{
+        padding-left:50px;
+        padding-right:50px;
+    }
+    
+    
+}
+
+.wine-description, .cocktail-description, .beer-description {
+  font-family: 'Didact Gothic', sans-serif;
+    font-size:13px;
+  color: #938372;
+    float:left;
+    
+  
+    
+  /*padding-left: 7%;*/
+}
+
+#sbLogo {
+  max-width: 10px;
+}
+#logo{  
+  text-align:center;
+}
+#cocktails-ro{
+    border-right: 1px solid #ccc;
+ 
+}
+
+
+/*.wine-item{
+    margin-bottom: 50px;
+    overflow: hidden;
+    position: relative;
+    display: block;
+}*/
+
+/*.wine-item .wine-name, .wine-item .wine-price {
+    font-size: 22px;
+    font-family: 'Khand';
+}*/
+
+/*
+.wine-item .wine-name {
+    display: inline-block;
+    padding-right: 10px;
+    max-width: 80%;
+    margin: 0 0 15px;
+}
+
+
+.wine-item .wine-price{
+
+  padding-left: 10px;
+right: 0;
+position: absolute;
+margin-top: -3px;
+}
+
+.wine-item .wine-description {
+    display: block;
+    clear: both;
+    color: #938372;
+}
+
+.wine-item {
+  width: 70%;
+}
+*/
