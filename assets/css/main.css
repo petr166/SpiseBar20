@@ -204,3 +204,64 @@
 #navright {
   float: right;
 }
+
+.navbar-default .navbar-brand{
+  color: white;
+  font-size: 16px;
+  padding: 15px 10px;
+}
+
+#navibar {
+  background-color: transparent;
+  transition: all 0.5s ease;
+  height: 45px;
+}
+
+#navibar.strong {
+  background: radial-gradient(transparent, #402E22);
+  background-color: rgba(120, 86, 64, .99);
+}
+
+#navright_span {
+  opacity: 0;
+  padding-right: 0;
+}
+
+#navright_span:hover {
+  color: white;
+}
+
+@media (min-width: 768px) {
+  #navibar {
+    height: 52px;
+    padding: 0 10px;
+  }
+
+  .navbar-default .navbar-brand{
+    font-size: 18px;
+  }
+
+  #navright_span {
+    opacity: 1;
+  }
+}
+
+@media (min-width: 992px) {
+  #navibar {
+    height: 55px;
+    padding: 0 10px;
+  }
+
+  .navbar-default .navbar-brand{
+    font-size: 20px;
+  }
+}
+
+#my_nav_brand {
+  opacity: 0;
+  transition: 0.5s;
+}
+
+#my_nav_brand.displayed {
+  opacity: 1;
+}

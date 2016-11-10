@@ -1,6 +1,8 @@
 window.onload = function() {
   showContent();
   smoothScroll();
+  strongNaviBar();
+  setNaviBar();
 };
 
 //fade in the home page
@@ -21,14 +23,6 @@ function smoothScroll() {
   });
 }
 
-//add functionality for the navibar
-function navibar() {
-  $('#menu_toggle').click(function(e) {
-    e.preventDefault();
-    $('#page_container').toggleClass("sidebar-displayed");
-  });
-}
-
 /* Set the width of the side navigation to 250px */
 function openNav() {
     document.getElementById("sidebar").style.width = "250px";
@@ -37,4 +31,20 @@ function openNav() {
 /* Set the width of the side navigation to 0 */
 function closeNav() {
     document.getElementById("sidebar").style.width = "0";
+}
+
+var aboutSectionPos = $('#aboutSection').offset().top;
+
+function setNaviBar() {
+  $(window).scroll(strongNaviBar);
+}
+
+function strongNaviBar() {
+  if ($(window).scrollTop() > aboutSectionPos-50) {
+    $('#navibar').addClass('strong');
+    $('#my_nav_brand').addClass('displayed');
+  } else {
+    $('#navibar').removeClass('strong');
+    $('#my_nav_brand').removeClass('displayed');
+  }
 }
