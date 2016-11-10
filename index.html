@@ -21,33 +21,25 @@
     <!-- Page container -->
     <div id="page_container" class="container-fluid fade-out">
 
-      <!-- Navibar -->
-      <nav id="navibar" class="nav navbar-default">
-        <div class="container-fluid">
-          <!-- Nav header -->
-          <div class="navbar-header">
+      <!-- Header - NavBar -->
+      <header class="nav navbar-default" role="navigation">
             <a class="navbar-brand" href="#">Spise Bar</a>
-          </div><!-- /header -->
-
-          <div class="navbar-right">
-            <ul class="nav navbar-nav">
-              <li><a id="menu_toggle" href="#" role="button" onclick="openNav()">
+            <div id="navright">
+              <a id="menu_toggle" class="navbar-brand" href="#" role="button" onclick="openNav()">
                 <span>Menu</span>
                 <span class="glyphicon glyphicon-menu-hamburger" aria-hidden="true"></span>
-              </a></li>
-            </ul>
-          </div>
-        </div><!-- /container -->
-      </nav> <!-- /navibar -->
+                </a>
 
-      <div id="mySidenav" class="sidenav">
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-        <ul class="sidebar-nav">
-          <li><a href="#">Home</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Menu</a></li>
-        </ul>
-      </div>
+                <div id="sidebar" class="sidenav">
+                  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                  <ul class="sidebar-nav">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Menu</a></li>
+                  </ul>
+                </div>
+            </div>
+      </header>
 
       <!-- Overview row -->
       <div class="row overview-row">
