@@ -315,3 +315,100 @@ margin-top: -3px;
 #menu_buttons > button:hover {
   background-color: rgba(64, 46, 34, 1);
 }
+
+.menu-header {
+  text-align: center;
+  font-weight: 500;
+  font-size: 6vh;
+  font-family: 'Playball';
+  padding-bottom: 2%;
+}
+
+.food-type {
+  padding: 0px;
+  margin: 0px;
+  font-size: 22px;
+  font-family: 'Playball';
+  display: inline;
+  vertical-align: top;
+  line-height: 28px;
+  padding-left: 20.3%;
+}
+
+.food-item {
+  padding-bottom: 2%;
+}
+
+.food-name {
+  padding: 0px;
+  margin: 0px;
+  font-size: 22px;
+  font-family: 'Khand';
+  display: inline;
+  vertical-align: top;
+  padding-left: 21%;
+  font-size: 3vh;
+}
+
+.food-price {
+  font-size: 22px;
+  font-family: 'Khand';
+  display: inline;
+  vertical-align: top;
+  text-align: center;
+  font-size: 3vh;
+}
+
+.food-description {
+  text-align: justify;
+  font-family: 'Didact Gothic', sans-serif;
+  color: #938372;
+  padding-left:21%;
+  font-size: 2vh;
+}
+
+.contactSection {
+  background-color: #785640;
+}
+
+.contact-icons {
+  text-align: center;
+  margin-bottom: 3%;
+  letter-spacing: 0.4em;
+  margin-top: 9%;
+}
+
+.contact-box {
+  letter-spacing: 0.2em;
+  text-align: center;
+  margin-bottom: 9%;
+  font-family: 'Roboto', sans-serif;
+  color: #FFF;
+}
+
+.contact-address, .contact-address-name,
+.contact-phone {
+  display: inline;
+}
+
+.separation-line {
+  border-left: solid 1px #FFF;
+  display: inline;
+  margin-right: 0.6em;
+}
+
+.fa-facebook-square, .fa-instagram,
+.fa-envelope, .fa-smile-o,
+.fa-facebook-square:visited, .fa-instagram:visited,
+.fa-envelope:visited, .fa-smile-o:visited,
+.fa-facebook-square:link, .fa-instagram:link,
+.fa-envelope:link, .fa-smile-o:link {
+  color: #FFF;
+  text-decoration: none;
+}
+
+.fa-facebook-square:hover, .fa-instagram:hover,
+.fa-envelope:hover, .fa-smile-o:hover  {
+  text-decoration: none;
+  color: #402E22;
+}
