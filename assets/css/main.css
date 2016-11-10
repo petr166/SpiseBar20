@@ -7,6 +7,10 @@
     transition: none;
 }
 
+#page_container.blured {
+  opacity: .7;
+}
+
 .clickable {
   transition: all 0.5s ease 0s;
 }
@@ -152,41 +156,38 @@
   background-color: rgba(64, 46, 34, 1);
 }
 
-/* The side navigation menu */
 .sidenav {
-    height: 100%; /* 100% Full-height */
-    width: 0; /* 0 width - change this with JavaScript */
-    position: fixed; /* Stay in place */
+    height: 100%;
+    width: 0;
+    position: fixed;
     z-index: 1;
     top: 0;
     right: 0;
-    background-color: #111; /* Black*/
-    overflow: hidden; /* Disable horizontal scroll */
-    padding-top: 60px; /* Place content 60px from the top */
-    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+    background: radial-gradient(transparent, #402E22);
+    background-color: rgba(120, 86, 64, .9);
+    overflow: hidden;
+    padding-top: 40px;
+    transition: 0.5s;
 }
 
 .sidebar-nav {
-  padding: 0;
+  padding: 0 0 0 40px;
   list-style: none;
 }
 
-/* The navigation menu links */
 .sidenav a {
-    padding: 8px 8px 8px 32px;
+    padding: 8px 8px 8px 8px;
     text-decoration: none;
-    font-size: 25px;
-    color: #818181;
+    font-size: 18px;
+    color: white;
     display: block;
     transition: 0.3s
 }
 
-/* When you mouse over the navigation links, change their color */
 .sidenav a:hover, .offcanvas a:focus{
-    color: #f1f1f1;
+    color: rgba(255, 255, 255, .5);
 }
 
-/* Position and style the close button (top right corner) */
 .sidenav .closebtn {
     position: absolute;
     top: 0;
@@ -195,10 +196,13 @@
     margin-left: 50px;
 }
 
-/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
-@media screen and (max-height: 450px) {
-    .sidenav {padding-top: 15px;}
-    .sidenav a {font-size: 18px;}
+    .sidenav {padding-top: 60px;}
+    .sidenav a {font-size: 21px;}
+}
+
+@media (min-width: 768px) {
+  .sidenav {padding-top: 60px;}
+  .sidenav a {font-size: 25px;}
 }
 
 #navright {
@@ -209,6 +213,10 @@
   color: white;
   font-size: 16px;
   padding: 15px 10px;
+}
+
+.navbar-default .navbar-brand:hover {
+  color: white;
 }
 
 #navibar {
@@ -259,6 +267,7 @@
 
 #my_nav_brand {
   opacity: 0;
+  color: white;
   transition: 0.5s;
 }
 

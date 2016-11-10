@@ -26,20 +26,22 @@ function smoothScroll() {
 /* Set the width of the side navigation to 250px */
 function openNav() {
     document.getElementById("sidebar").style.width = "250px";
+    $('#page_container').addClass("blured");
 }
 
 /* Set the width of the side navigation to 0 */
 function closeNav() {
     document.getElementById("sidebar").style.width = "0";
+    $('#page_container').removeClass("blured");
 }
 
-var aboutSectionPos = $('#aboutSection').offset().top;
-
+/* Set the navibar to be solid on scroll */
 function setNaviBar() {
   $(window).scroll(strongNaviBar);
 }
 
 function strongNaviBar() {
+  var aboutSectionPos = $('#aboutSection').offset().top;
   if ($(window).scrollTop() > aboutSectionPos-50) {
     $('#navibar').addClass('strong');
     $('#my_nav_brand').addClass('displayed');
