@@ -73,13 +73,46 @@
   background-color: transparent;
 }
 
-#aboutSection{
+/* about section and carousel css*/
+#aboutSection {
   min-height: 100vh;
   color: #fff;
-  /*background-color: #2e3842;*/
+}
+
+#about-col {
+  min-height: 50vh;
+  height: 100vh;
+  margin: 0 auto;
+  padding: 8% 5vh;
   background: radial-gradient(transparent, #402E22);
   background-color: rgba(120, 86, 64, .9);
 }
+
+.about-text {
+  width: 75%;
+}
+
+@media only screen and (min-width: 768px) {
+    #about-col, #carousel_col{
+      min-height: inherit;
+    }
+}
+
+.slideshow-row {
+  height: inherit;
+  width: 100%;
+}
+
+.img-responsive,
+.thumbnail > img,
+.thumbnail a > img,
+.carousel-inner > .item > img,
+.carousel-inner > .item > a > img {
+  display: block;
+  width: 100%;
+  max-height: 100vh;
+}
+/* end about + carousel css*/
 
 .section-title {
   font-family: 'Roboto', sans-serif;
