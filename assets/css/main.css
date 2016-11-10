@@ -147,7 +147,7 @@ text-align: center;
   vertical-align: top;
   line-height: 28px;
   text-align: left;
-
+    float: left;
 }
 
 .wine-price, .cocktail-price, .beer-price {
@@ -160,13 +160,14 @@ text-align: center;
 
 }
 @media(min-width: 768px){
-    .beer-name, .beer-price, .cocktail-name, .cocktail-price{
+    .beer-name, .beer-price, .cocktail-name, .cocktail-price, .wine-name, .wine-price{
         font-size:20px;
     }
+    
 
 }
 @media(min-width: 992px){
-    .beer-name, .beer-price, .cocktail-name, .cocktail-price{
+    .beer-name, .beer-price, .cocktail-name, .cocktail-price, wine-name, .wine-price{
         font-size:20px;
     }
     .beer-item{
@@ -177,11 +178,15 @@ text-align: center;
 
 }
 @media(min-width:1200px){
-    .beer-name, .beer-price, .cocktail-name, .cocktail-price{
+    .beer-name, .beer-price, .cocktail-name, .cocktail-price, .wine-name, .wine-price{
         font-size:20px;
 
     }
     .cocktails-row{
+        padding-left:50px;
+        padding-right:50px;
+    }
+    .red-wine, white-wine{
         padding-left:50px;
         padding-right:50px;
     }
@@ -193,12 +198,12 @@ text-align: center;
   font-family: 'Didact Gothic', sans-serif;
     font-size:13px;
   color: #938372;
-    float:left;
-
-
+    float: left;
+    text-align: left;
 
   /*padding-left: 7%;*/
 }
+
 
 #sbLogo {
   max-width: 10px;
@@ -213,15 +218,21 @@ text-align: center;
 
 .wine-item .wine-name {
     display: inline-block;
-    padding-right: 10px;
+    padding-right: 20px;
     max-width: 80%;
     margin: 0 0 15px;
 }
-
-
 .wine-item .wine-price{
+    
+padding-left: 10px;
+right: 0;
+position: absolute;
+}
 
-  padding-left: 10px;
+/*=
+.wine-item .wine-price{
+    
+padding-left: 10px;
 right: 0;
 position: absolute;
 margin-top: -3px;
@@ -249,7 +260,7 @@ margin-top: -3px;
   font-size: 2vh;
   text-align: justify;
   /*padding-left: 7%;*/
-}
+}*/
 
 .rose-wine div {
   padding-top: 0px;
