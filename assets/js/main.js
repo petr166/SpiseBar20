@@ -31,7 +31,7 @@ function loadImages() {
     url : folder,
     success: function (data) {
       $(data).find("a").attr("href", function (i, val) {
-        if( val.match(/\.(jpe?g|png|gif)$/) ) {
+        if( val.match(/\.(jpe?g|png|gif|JPG)$/) ) {
           $("<div class='item'><img src='"+ folder + val +"'></div>").appendTo('.carousel-inner');
           $('<li data-target="#carousel" data-slide-to="'+ j +'"></li>').appendTo('.carousel-indicators');
           j++;
