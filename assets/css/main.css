@@ -489,7 +489,7 @@ max-width: 100%;
 .menu-header {
   text-align: center;
   font-weight: 500;
-  font-size: 6vh;
+  font-size:30px;
   font-family: 'Playball';
   padding-bottom: 2%;
 }
@@ -497,12 +497,14 @@ max-width: 100%;
 .food-type {
   padding: 0px;
   margin: 0px;
-  font-size: 22px;
+  font-size: 25px;
   font-family: 'Playball';
   display: inline;
+   
   vertical-align: top;
   line-height: 28px;
-  padding-left: 20.3%;
+  /*padding-left: 20.3%;*/
+
 }
 
 .food-item {
@@ -512,30 +514,36 @@ max-width: 100%;
 .food-name {
   padding: 0;
   margin: 0;
-  font-size: 22px;
   font-family: 'Khand';
   display: inline;
   vertical-align: top;
-  padding-left: 21%;
-  font-size: 3vh;
+  padding-left: 9%;
+  font-size: 20px;
 }
 
 .food-price {
   padding: 0;
   margin: 0;
-  font-size: 22px;
+  font-size: 20px;
   font-family: 'Khand';
   vertical-align: top;
   text-align: center;
-  font-size: 3vh;
+  float:right;
+ 
 }
 
 .food-description {
   text-align: justify;
   font-family: 'Didact Gothic', sans-serif;
   color: #938372;
-  padding-left:21%;
-  font-size: 2vh;
+  padding-left:9%;
+  font-size: 15px;
+}
+@media(min-width:1200px){
+    .food-name,.food-description{
+        padding-left: 21%;
+    }
+   
 }
 
 .contactSection {
