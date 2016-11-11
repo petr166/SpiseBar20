@@ -275,12 +275,12 @@ text-align: center;
     .red-wine,#cocktails-ro{
     border-right: 1px solid #ccc;
     }
-    
+
 }
 #cocktailSection, .foodSection, #wineSection{
     display: none;
     padding:50px;
-     
+
 }
 .wine-item, .cocktail-item {
   padding-top: 4%;
@@ -633,7 +633,6 @@ max-width: 100%;
   font-family: 'Playball';
   display: inline;
   padding-bottom:2%;
-   
   vertical-align: top;
   line-height: 28px;
   /*padding-left: 20.3%;*/
@@ -662,7 +661,7 @@ max-width: 100%;
   vertical-align: top;
   text-align: center;
   float:right;
- 
+
 }
 
 .food-description {
@@ -676,7 +675,7 @@ max-width: 100%;
     .food-name,.food-description{
         padding-left: 21%;
     }
-   
+
 }
 
 .contactSection {
@@ -724,15 +723,16 @@ max-width: 100%;
   text-decoration: none;
   color: #402E22;
 }
+
 .up-arrow{
-  
+
   margin-top: 1.2em;
   font-size: 2em;
   border-color:transparent;
   background-color: transparent;
 }
 .up-arrow:hover, .up-arrow:active, .up-arrow:focus{
-    
+
     text-decoration: none;
     color:transparent;
     border-color:transparent;
@@ -740,5 +740,11 @@ max-width: 100%;
 }
 .glyphicon-menu-up{
     color:#785640;
-    
+
+}
+
+.address-map-link, .address-map-link:hover,
+.address-map-link:link, .address-map-link:visited {
+  text-decoration: none;
+  color: inherit;
 }
