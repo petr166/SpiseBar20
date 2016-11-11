@@ -316,6 +316,10 @@ margin-top: -3px;
   background-color: rgba(64, 46, 34, 1);
 }
 
+.foodSection {
+max-width: 100%;
+}
+
 .menu-header {
   text-align: center;
   font-weight: 500;
@@ -340,8 +344,8 @@ margin-top: -3px;
 }
 
 .food-name {
-  padding: 0px;
-  margin: 0px;
+  padding: 0;
+  margin: 0;
   font-size: 22px;
   font-family: 'Khand';
   display: inline;
@@ -351,9 +355,10 @@ margin-top: -3px;
 }
 
 .food-price {
+  padding: 0;
+  margin: 0;
   font-size: 22px;
   font-family: 'Khand';
-  display: inline;
   vertical-align: top;
   text-align: center;
   font-size: 3vh;
