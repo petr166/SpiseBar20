@@ -200,7 +200,7 @@ text-align: center;
     .beer-name, .beer-price, .cocktail-name, .cocktail-price, .wine-name, .wine-price{
         font-size:20px;
     }
-    
+
 
 }
 @media(min-width: 992px){
@@ -260,7 +260,7 @@ text-align: center;
     margin: 0 0 15px;
 }
 .wine-item .wine-price{
-    
+
 padding-left: 10px;
 right: 0;
 position: absolute;
@@ -268,7 +268,7 @@ position: absolute;
 
 /*=
 .wine-item .wine-price{
-    
+
 padding-left: 10px;
 right: 0;
 position: absolute;
@@ -500,7 +500,7 @@ max-width: 100%;
   font-size: 25px;
   font-family: 'Playball';
   display: inline;
-   
+
   vertical-align: top;
   line-height: 28px;
   /*padding-left: 20.3%;*/
@@ -529,7 +529,7 @@ max-width: 100%;
   vertical-align: top;
   text-align: center;
   float:right;
- 
+
 }
 
 .food-description {
@@ -543,7 +543,7 @@ max-width: 100%;
     .food-name,.food-description{
         padding-left: 21%;
     }
-   
+
 }
 
 .contactSection {
@@ -590,4 +590,10 @@ max-width: 100%;
 .fa-envelope:hover, .fa-smile-o:hover  {
   text-decoration: none;
   color: #402E22;
+}
+
+.address-map-link, .address-map-link:hover,
+.address-map-link:link, .address-map-link:visited {
+  text-decoration: none;
+  color: inherit;
 }
