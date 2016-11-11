@@ -72,26 +72,19 @@ function strongNaviBar() {
     $('#my_nav_brand').removeClass('displayed');
   }
 }
-/*var cocktailSection = $('#cocktailSection');
-var cocktailButton = $('#foodButton');
-function foodSection(){
-    console.log("esti un prost");
-    $('#cocktailSection').css('display','block');
-    cocktailSection.style.display = "block";
-    
-}*/
+
 $(document).ready(function(){
-    $("#foodButton").click(function(){ 
+    $("#foodButton").click(function(){
          $("#cocktailSection").hide();
          $("#wineSection").hide();
          $(".foodSection").slideDown("slow");
-        
-    }); 
+
+    });
     $("#wineButton").click(function(){
         $("#cocktailSection").hide();
         $(".foodSection").hide();
         $("#wineSection").slideDown("slow");
-    }); 
+    });
     $("#cocktailButton").click(function(){
         $("#wineSection").hide();
         $(".foodSection").hide();
@@ -100,33 +93,25 @@ $(document).ready(function(){
     $("#cocktail-arrow").click(
         function(){
         setTimeout(function(){$("#cocktailSection").hide();}, 1500);
-       
-        
-        
+
+
+
     });
      $("#food-arrow").click(
         function(){
-       
-       
+
+
         setTimeout(function(){$(".foodSection").hide();}, 1500);
-        
-        
+
+
     });
      $("#wine-arrow").click(
         function(){
-       
-        setTimeout(function(){$(".foodSection").hide();}, 1500);
-        
-        
+
+        setTimeout(function(){$("#wineSection").hide();}, 1500);
+
+
     });
-  /*  $(".up-arrow").click(function(){
-       $("#cocktailSection").slideUp("slow", function(){$(this).hide();}); 
-        $(".foodSection").slideUp("slow", function(){
-            $(this).hide();
-             
-        }); 
-          $("#wineSection").slideUp("slow", function(){$(this).hide();}); 
-    }); */
-    
-    
+
+
 });
