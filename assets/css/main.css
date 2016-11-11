@@ -270,11 +270,18 @@
 text-align: center;
 }
 
-.red-wine {
-  border-right: 1px solid #ccc;
-  border-left: 1px solid #ccc;
-}
 
+@media(min-width:992px){
+    .red-wine,#cocktails-ro{
+    border-right: 1px solid #ccc;
+    }
+    
+}
+#cocktailSection, .foodSection, #wineSection{
+    display: none;
+    padding:50px;
+     
+}
 .wine-item, .cocktail-item {
   padding-top: 4%;
   width: 100%;
@@ -372,10 +379,7 @@ text-align: center;
 #logo{
   text-align:center;
 }
-#cocktails-ro{
-    border-right: 1px solid #ccc;
 
-}
 
 .wine-item .wine-name {
     display: inline-block;
@@ -475,7 +479,7 @@ margin-top: -3px;
   margin: 1.4em auto;
 }
 
-#menu_buttons > button {
+#menu_buttons > a {
   margin: 1.3em .5em;
   width: 5.2em;
   font-size: 1.5em;
@@ -628,6 +632,7 @@ max-width: 100%;
   font-size: 25px;
   font-family: 'Playball';
   display: inline;
+  padding-bottom:2%;
    
   vertical-align: top;
   line-height: 28px;
@@ -718,4 +723,22 @@ max-width: 100%;
 .fa-envelope:hover, .fa-smile-o:hover  {
   text-decoration: none;
   color: #402E22;
+}
+.up-arrow{
+  
+  margin-top: 1.2em;
+  font-size: 2em;
+  border-color:transparent;
+  background-color: transparent;
+}
+.up-arrow:hover, .up-arrow:active, .up-arrow:focus{
+    
+    text-decoration: none;
+    color:transparent;
+    border-color:transparent;
+    background-color:transparent;
+}
+.glyphicon-menu-up{
+    color:#785640;
+    
 }

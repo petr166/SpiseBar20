@@ -133,15 +133,19 @@
           </div>
 
           <div id="menu_buttons">
-            <button class="btn btn-info clickable" type="button" name="button">Food</button>
+             <!--<button class="btn btn-info clickable" type="button" name="button" id="foodButton">Food</button>
             <button class="btn btn-info clickable" type="button" name="button">Wine</button>
-            <button class="btn btn-info clickable" type="button" name="button">Cocktails</button>
+            <button class="btn btn-info clickable" type="button" name="button">Cocktails</button>-->
+              
+              <a id="foodButton" class="btn btn-info clickable scrolly" href='.foodSection' role="button" >Food</a> 
+              <a id="wineButton" class="btn btn-info clickable scrolly" href='#wineSection' role="button" >Wine</a>
+              <a id="cocktailButton" class="btn btn-info clickable scrolly" href='#cocktailSection' role="button">Cocktails</a>
           </div>
         </div> <!-- /menu overview column -->
       </div> <!-- /menu overview row -->
 
         <!--Cocktails section-->
-        <br><br><br>
+        <div class="row"id="cocktailSection">
         <div class="row cocktails-row col-md-6" id="cocktails-ro">
             <h3 style="text-align:center" class="drink-type">Cocktails</h3>
             <div class="row cocktail-item">
@@ -342,7 +346,7 @@
 
             </div>
             <div class="row" id="logo">
-                <center>  <img  src="img/sb20-logo-photo.png" class="img-responsive" alt="SpiseBar Logo" width="400" height="450" id="logo"></center>
+                <center>  <img  src="img/sb20-logo-photo.png" class="img-responsive" alt="SpiseBar Logo"  id="sbLogo"></center>
 
             </div>
 
@@ -350,7 +354,15 @@
 
 
 
-
+        
+        </div>
+            <center>
+            <div class="row col-md-12">
+                <a  id="cocktail-arrow"class="btn btn-info scrolly up-arrow" href="#menu_row"  role="button">
+                    <span class="glyphicon glyphicon-menu-up" aria-hidden="true"></span>
+                </a>
+          </div>
+        </center>
         </div>
 
 
@@ -552,8 +564,15 @@
               <div class="row" id="sbLogoDiv">
             <center>  <img src="img/sb20-logo-photo.png" alt="SpiseBar logo"  class="img-responsive" id="sbLogo"></center>
               </div>
-
+            
               </div> <!--/ White Wine-->
+          <center>
+            <div class="row col-md-12">
+                <a id="wine-arrow" class="btn btn-info scrolly up-arrow" href="#menu_row"  role="button">
+                    <span class="glyphicon glyphicon-menu-up" aria-hidden="true"></span>
+                </a>
+          </div>
+        </center>
       </div> <!--/ Wine Section-->
 
       <!-- Food Section -->
@@ -690,8 +709,16 @@
             <p class="col-md-6 food-description">med sabayonnecreme & chokoladeknas</p>
           </div>
         </div>
-
+         
       </div><!-- /Menu-->
+         <center>
+            <div class="row col-md-12">
+                <a  id="food-arrow" class="btn btn-info scrolly up-arrow" href="#menu_row"  role="button">
+                    <span class="glyphicon glyphicon-menu-up" aria-hidden="true"></span>
+                </a>
+          </div>
+        </center>
+        
     </div><!-- /Food Section -->
 
   <!-- Contact Section -->
