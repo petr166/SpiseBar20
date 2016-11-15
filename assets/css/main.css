@@ -731,9 +731,15 @@ max-width: 100%;
   border-color:transparent;
   background-color: transparent;
 }
-.up-arrow:hover, .up-arrow:active, .up-arrow:focus{
+.up-arrow:hover, .up-arrow:focus, .up-arrow:onclick{
 
     text-decoration: none;
+    color:transparent;
+    border-color:transparent;
+    background-color:transparent;
+}
+#wine-arrow:active, #cocktail-arrow:active, #food-arrow:active{
+      text-decoration: none;
     color:transparent;
     border-color:transparent;
     background-color:transparent;
