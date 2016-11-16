@@ -72,7 +72,7 @@
   background-color: transparent;
 }
 
-@media (min-width: 360px) {
+@media only screen and (min-width: 360px) {
   .overview-box {
     font-size: 14px;
     line-height: 28px;
@@ -83,7 +83,7 @@
   }
 }
 
-@media (min-width: 400px) {
+@media only screen and (min-width: 400px) {
   .overview-box {
     font-size: 16px;
     line-height: 34px;
@@ -94,7 +94,7 @@
   }
 }
 
-@media (min-width: 400px) and (max-height: 320px) {
+@media only screen and (min-width: 400px) and (max-height: 320px) {
   .overview-box {
     font-size: 10px;
     line-height: 12px;
@@ -113,7 +113,7 @@
   }
 }
 
-@media (min-width: 400px) and (min-height: 360px) and (max-height: 420px) {
+@media only screen and (min-width: 400px) and (min-height: 360px) and (max-height: 420px) {
   .overview-box {
     font-size: 10px;
     line-height: 18px;
@@ -128,7 +128,7 @@
   }
 }
 
-@media (min-width: 768px) and (min-height: 1024px) {
+@media only screen and (min-width: 768px) and (min-height: 1024px) {
   .overview-box {
     font-size: 17px;
     line-height: 30px;
@@ -140,7 +140,7 @@
   }
 }
 
-@media (min-width: 768px) and (max-height: 1020px) {
+@media only screen and (min-width: 768px) and (max-height: 1020px) {
   .overview-box {
     font-size: 17px;
     line-height: 30px;
@@ -152,7 +152,7 @@
   }
 }
 
-@media (min-width: 1280px) {
+@media only screen and (min-width: 1280px) {
   .overview-box {
     font-size: 18px;
     line-height: 35px;
@@ -164,7 +164,7 @@
   }
 }
 
-@media (min-width: 1440px) {
+@media only screen and (min-width: 1440px) {
   .overview-box {
     font-size: 20px;
     line-height: 40px;
@@ -180,7 +180,7 @@
   }
 }
 
-@media (min-width: 1920px) {
+@media only screen and (min-width: 1920px) {
   .overview-box {
     font-size: 22px;
     line-height: 45px;
