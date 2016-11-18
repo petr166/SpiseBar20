@@ -197,7 +197,7 @@
 }
 
 
-/* about section and carousel css*/
+/* ABOUT SECTION AND CAROUSEL CSS*/
 #aboutSection {
   min-height: 100vh;
   color: #fff;
@@ -216,10 +216,249 @@
   width: 75%;
 }
 
-@media only screen and (min-width: 768px) {
-    #about-col, #carousel_col{
-      min-height: inherit;
-    }
+/* Width smaller than 319px */
+@media (max-width: 319px){
+  #aboutSection   {
+    display: table;
+  }
+
+  #about-col {
+    display: table-footer-group;
+  }
+
+  #carousel-col {
+    display: table-header-group;
+    float: none;
+  }
+
+  #about_text_box .section-title {
+    font-size: 18px;
+    margin-top: 0px;
+  }
+
+  #about_text_box .section-text {
+    font-size: 14px;
+  }
+
+  #carousel-row {
+    margin: 0px;
+    padding: 0px;
+  }
+}
+
+/* Extra Small Devices, Phones, Portrait */
+@media (min-width: 320px) and (max-width: 481px) and (orientation: portrait) {
+  #aboutSection   {
+    display: table;
+  }
+
+  #about-col {
+    display: table-footer-group;
+  }
+
+  #carousel-col {
+    display: table-header-group;
+    float: none;
+  }
+
+  #carousel-row {
+    margin: 0px;
+    padding: 0px;
+  }
+}
+
+/* Extra Small Devices, Phones, Landscape */
+@media (min-width: 481px) and (orientation: landscape) {
+  #about_text_box .section-title {
+    font-size: 21px;
+    margin-top: 0px;
+  }
+
+  #about_text_box .section-text {
+    font-size: 17px;
+  }
+
+  #aboutSection   {
+    display: table;
+  }
+  #about-col {
+    display: table-footer-group;
+  }
+  #carousel-col {
+    display: table-header-group;
+    float: none;
+  }
+
+  #carousel-row {
+    margin: 0px;
+    padding: 0px;
+  }
+}
+
+/* iPhone 5, Landscape */
+@media only screen
+and (min-device-width : 320px)
+and (max-device-width : 568px)
+and (orientation : landscape) {
+  #about_text_box .section-title {
+    font-size: 18px;
+    margin-top: 0px;
+  }
+
+  #about_text_box .section-text {
+    font-size: 14px;
+  }
+
+  #aboutSection   {
+    display: table;
+  }
+
+  #about-col {
+    display: table-footer-group;
+  }
+
+  #carousel-col {
+    display: table-caption;
+    float: none;
+  }
+
+  #carousel-row {
+    margin: 0px;
+    padding: 0px;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 641px) and (orientation: portrait) {
+  #aboutSection   {
+    display: table;
+  }
+
+  #about-col {
+    display: table-footer-group;
+  }
+
+  #carousel-col {
+    display: table-header-group;
+    float: none;
+  }
+
+  #about_text_box .section-title {
+    font-size: 24px;
+  }
+
+  #about_text_box .section-text {
+    font-size: 20px;
+  }
+
+  #carousel-row {
+    margin: 0px;
+    padding: 0px;
+  }
+}
+
+/* Small Devices, Tablets, Portrait */
+@media (min-width:641px) and (orientation: portrait) {
+  #about_text_box .section-title {
+    font-size: 39px;
+  }
+
+  #about_text_box .section-text {
+    font-size: 35px;
+  }
+
+  #aboutSection   {
+    display: table;
+  }
+  #about-col {
+    display: table-footer-group;
+  }
+  #carousel-col {
+    display: table-header-group;
+    float: none;
+  }
+
+  #carousel-row {
+    margin: 0px;
+    padding: 0px;
+  }
+}
+
+/* Small Devices, Tablets, Landscape */
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px)
+and (orientation : landscape) {
+  #about_text_box .section-title {
+    font-size: 35px;
+  }
+
+  #about_text_box .section-text {
+    font-size: 31px;
+  }
+
+  #aboutSection   {
+    display: table;
+  }
+  #about-col {
+    display: table-footer-group;
+  }
+  #carousel-col {
+    display: table-header-group;
+    float: none;
+  }
+
+  #carousel-row {
+    margin: 0px;
+    padding: 0px;
+  }
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+  #aboutSection   {
+    display: flex;
+  }
+
+  #about_text_box .section-title {
+    font-size: 22px;
+  }
+
+  #about_text_box .section-text {
+    font-size: 18px;
+  }
+
+  .carousel img {
+    min-height: 100vh;
+  }
+
+  #carousel-row {
+    margin: -15px;
+    margin-top: 0px;
+  }
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+  #aboutSection   {
+    display: flex;
+  }
+
+  #about_text_box .section-title {
+    font-size: 24px;
+  }
+
+  #about_text_box .section-text {
+    font-size: 20px;
+  }
+
+  .carousel img {
+    min-height: 100vh;
+  }
+
+  #carousel-row {
+    margin: -15px;
+    margin-top: 0px;
+  }
 }
 
 .slideshow-row {
@@ -227,16 +466,18 @@
   width: 100%;
 }
 
-.img-responsive,
-.thumbnail > img,
-.thumbnail a > img,
-.carousel-inner > .item > img,
-.carousel-inner > .item > a > img {
-  display: block;
-  width: 100%;
-  max-height: 100vh;
+.carousel {
+  padding: 0px;
+  margin: 0px;
 }
-/* end about + carousel css*/
+
+.carousel img {
+  object-fit: cover;
+  overflow: hidden;
+  max-height: 100vh;
+  width: 100%;
+}
+/* END OF ABOUT + CAROUSEL CSS*/
 
 .section-title {
   font-family: 'Roboto', sans-serif;
