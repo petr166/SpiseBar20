@@ -33,17 +33,24 @@
   font-weight: 400;
     font-family: 'Roboto', sans-serif;
     text-transform: uppercase;
-    font-size: 13px;
+    font-size: 2.2vh;
     letter-spacing: 0.1em;
-    line-height: 20px;
+    line-height: 4vh;
     text-align: center;
+    margin-top: 5vh;
+}
+
+@media (orientation: portrait) {
+  .overview-box span:nth-of-type(2) {
+    display: block;
+  }
 }
 
 #main_title {
   opacity: 1;
   transition: 3s opacity;
   font-weight: 900;
-  font-size: 5.3em;
+  font-size: 5.6em;
   letter-spacing: 0.2em;
   margin-bottom: 0.4em;
 }
@@ -55,6 +62,7 @@
 }
 
 #book_butt {
+  font-size: inherit;
   margin-top: 1.3em;
   border-width: .1em;
   border-color: white;
@@ -66,13 +74,50 @@
 }
 
 #down_arrow {
-  margin-top: 1.2em;
+  margin-top: 6vh;
   font-size: 2em;
   border-color: transparent;
   background-color: transparent;
 }
 
-@media (min-width: 360px) {
+/* Phone - landscape */
+@media (max-width: 720px) and (orientation:landscape) {
+  .overview-box {
+    font-size: 3vh;
+  }
+
+  #book_butt {
+    margin-top: .5em;
+  }
+
+  #down_arrow {
+    margin-top: 3vh;
+  }
+}
+
+/* Laptop */
+@media (min-width: 721px) and (orientation:landscape) {
+  .overview-box {
+    font-size: 2.5vh;
+    margin-top: 7vh;
+    line-height: 4.5vh;
+  }
+
+  #main_title {
+    font-size: 6em;
+  }
+
+  #book_butt {
+    font-size: 2vh;
+  }
+
+  #down_arrow {
+    margin-top: 10vh;
+  }
+}
+
+/*
+@media only screen and (min-width: 360px) {
   .overview-box {
     font-size: 14px;
     line-height: 28px;
@@ -83,7 +128,7 @@
   }
 }
 
-@media (min-width: 400px) {
+@media only screen and (min-width: 400px) {
   .overview-box {
     font-size: 16px;
     line-height: 34px;
@@ -94,7 +139,7 @@
   }
 }
 
-@media (min-width: 400px) and (max-height: 320px) {
+@media only screen and (min-width: 400px) and (max-height: 320px) {
   .overview-box {
     font-size: 10px;
     line-height: 12px;
@@ -113,7 +158,7 @@
   }
 }
 
-@media (min-width: 400px) and (min-height: 360px) and (max-height: 420px) {
+@media only screen and (min-width: 400px) and (min-height: 360px) and (max-height: 420px) {
   .overview-box {
     font-size: 10px;
     line-height: 18px;
@@ -128,7 +173,7 @@
   }
 }
 
-@media (min-width: 768px) and (min-height: 1024px) {
+@media only screen and (min-width: 768px) and (min-height: 1024px) {
   .overview-box {
     font-size: 17px;
     line-height: 30px;
@@ -140,7 +185,7 @@
   }
 }
 
-@media (min-width: 768px) and (max-height: 1020px) {
+@media only screen and (min-width: 768px) and (max-height: 1020px) {
   .overview-box {
     font-size: 17px;
     line-height: 30px;
@@ -152,7 +197,7 @@
   }
 }
 
-@media (min-width: 1280px) {
+@media only screen and (min-width: 1280px) {
   .overview-box {
     font-size: 18px;
     line-height: 35px;
@@ -164,7 +209,7 @@
   }
 }
 
-@media (min-width: 1440px) {
+@media only screen and (min-width: 1440px) {
   .overview-box {
     font-size: 20px;
     line-height: 40px;
@@ -180,7 +225,7 @@
   }
 }
 
-@media (min-width: 1920px) {
+@media only screen and (min-width: 1920px) {
   .overview-box {
     font-size: 22px;
     line-height: 45px;
@@ -195,6 +240,8 @@
     font-size: 21px;
   }
 }
+
+*/
 
 
 /* ABOUT SECTION AND CAROUSEL CSS*/
