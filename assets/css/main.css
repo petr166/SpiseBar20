@@ -33,17 +33,24 @@
   font-weight: 400;
     font-family: 'Roboto', sans-serif;
     text-transform: uppercase;
-    font-size: 3.9vw;
+    font-size: 2.1vh;
     letter-spacing: 0.1em;
     line-height: 4vh;
     text-align: center;
+    margin-top: 5vh;
+}
+
+@media (orientation: portrait) {
+  .overview-box span:nth-of-type(2) {
+    display: block;
+  }
 }
 
 #main_title {
   opacity: 1;
   transition: 3s opacity;
   font-weight: 900;
-  font-size: 5.5em;
+  font-size: 5.6em;
   letter-spacing: 0.2em;
   margin-bottom: 0.4em;
 }
@@ -73,18 +80,10 @@
   background-color: transparent;
 }
 
-/* Tablet */
-@media only screen and (min-width: 600px) and (min-height: 800px) {
-  .overview-box {
-    font-size: 3vw;
-    margin-top: 10vh;
-  }
-}
-
 /* Phone - landscape */
-@media only screen and (max-width: 720px) and (orientation:landscape) {
+@media (max-width: 720px) and (orientation:landscape) {
   .overview-box {
-    font-size: 3.2vh;
+    font-size: 3vh;
   }
 
   #book_butt {
@@ -96,7 +95,26 @@
   }
 }
 
-/* Tablet - landscape */
+/* Laptop */
+@media (min-width: 721px) and (orientation:landscape) {
+  .overview-box {
+    font-size: 2.5vh;
+    margin-top: 7vh;
+    line-height: 4.5vh;
+  }
+
+  #main_title {
+    font-size: 6em;
+  }
+
+  #book_butt {
+    font-size: 2vh;
+  }
+
+  #down_arrow {
+    margin-top: 10vh;
+  }
+}
 
 /*
 @media only screen and (min-width: 360px) {
