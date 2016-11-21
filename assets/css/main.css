@@ -985,11 +985,6 @@ max-width: 100%;
   color: #FFF;
 }
 
-.contact-address, .contact-address-name,
-.contact-phone {
-  display: inline;
-}
-
 .separation-line {
   border-left: solid 1px #FFF;
   display: inline;
@@ -1010,6 +1005,42 @@ max-width: 100%;
 .fa-envelope:hover, .fa-smile-o:hover  {
   text-decoration: none;
   color: #402E22;
+}
+
+@media(max-width:767px){
+
+  .contact-address, .contact-address-name,
+  .contact-phone {
+    display: block;
+  }
+
+  .separation-line {
+    display: none;
+  }
+
+  .contact-box {
+    letter-spacing: 0.15em;
+  }
+}
+
+@media(min-width:768px) {
+
+  .contact-address, .contact-address-name,
+  .contact-phone {
+    display: inline;
+  }
+
+}
+
+@media(min-width:992px){
+  .contact-icons {
+    margin-right: 0;
+  }
+
+  .contact-box {
+    margin-right: 0;
+    letter-spacing: 0.2em;
+  }
 }
 
 .up-arrow{
