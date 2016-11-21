@@ -2,7 +2,8 @@
   $reqMethod = $_SERVER['REQUEST_METHOD']; //store the request method
 
   switch ($reqMethod) {
-    case 'GET': //handle the GET method
+    //handle the GET method
+    case 'GET':
       $file = "data.json"; //store the file path
       $data = file_get_contents($file); //read the file
 
@@ -16,21 +17,31 @@
       echo $response; //send the response
       break;
 
-    case 'POST': //handle the POST method
+
+    //handle the POST method
+    case 'POST':
       try {
         $jsonObj = $_POST['newData'];
       }
-      catch {
+      catch(Exception $e) {
         echo '{
             "code":"400",
             "status":"Bad Request",
-            "msg":"The POST request may contain the updated data set."
+            "msg":"The POST request may contain the updated data set"
         }';
         die;
       }
 
-      $file = "data.json";
-      file_put_contents($file, $jsonObj);
+      $file = "data.json"; //store the file path
+      file_put_contents($file, $jsonObj); //overwrite the file with the updated data
+
+      //build the response
+      $response = '{
+        "code" : "200",
+        "status" : "OK"
+      }';
+
+      echo $response; //send the response
       break;
 
     default: //method not accepted
