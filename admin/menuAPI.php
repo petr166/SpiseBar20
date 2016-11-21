@@ -17,7 +17,20 @@
       break;
 
     case 'POST': //handle the POST method
-      # code...
+      try {
+        $jsonObj = $_POST['newData'];
+      }
+      catch {
+        echo '{
+            "code":"400",
+            "status":"Bad Request",
+            "msg":"The POST request may contain the updated data set."
+        }';
+        die;
+      }
+
+      $file = "data.json";
+      file_put_contents($file, $jsonObj);
       break;
 
     default: //method not accepted
