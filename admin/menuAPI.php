@@ -24,11 +24,12 @@
         $jsonObj = $_POST['newData'];
       }
       catch(Exception $e) {
-        echo '{
-            "code":"400",
-            "status":"Bad Request",
-            "msg":"The POST request may contain the updated data set"
+        $badResp = '{
+            "code" : "400",
+            "status" : "Bad Request",
+            "msg" : "The POST request may contain the updated data set"
         }';
+        echo $badResp;
         die;
       }
 
@@ -45,11 +46,12 @@
       break;
 
     default: //method not accepted
-      echo '{
-          "code":"400",
-          "status":"Bad Request",
-          "msg":"This API will only respond to GET or POST requests"
+      $badResp = '{
+          "code" : "400",
+          "status" : "Bad Request",
+          "msg" : "This API will only respond to GET or POST requests"
       }';
+      echo $badResp;
       die;
       break;
   }
