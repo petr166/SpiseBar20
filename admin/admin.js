@@ -48,21 +48,50 @@ function convertIntoInput () {
     var str = $(this).attr('class');
     if (~str.indexOf("food-name")) {
       var textarea = $("<textarea class='col-md-6 textarea-name autoExpand' rows='1' data-min-rows='2'>");
+         textarea.blur(onBlurName);
+ 
+        
     }
 
     if (~str.indexOf("food-price")) {
       var textarea = $("<textarea class='col-md-6 food-price autoExpand' rows='1' data-min-rows='2'>");
+        textarea.blur(onBlurPrice);
     }
 
     if (~str.indexOf("food-description")) {
       var textarea = $("<textarea class='col-md-6 textarea-description autoExpand' rows='2' data-min-rows='2'>");
+        textarea.blur(onBlurDescription);
     }
     textarea.val($(this).text());
     $(this).replaceWith(textarea);
     textarea.select();
+      
   });
 }
+function onBlurName(){
+  
+        var html = $(this).val();
+        var viewableText = $("<h4 class='col-md-6 food-name editable'>");
+        viewableText.html(html);
+        $(this).replaceWith(viewableText);
+    
 
+    
+}
+function onBlurDescription(){
+      var html = $(this).val();
+      var viewableText = $("<p class='col-md-6 food-description editable'>");
+      viewableText.html(html);
+      $(this).replaceWith(viewableText);
+    
+}
+function onBlurPrice(){
+     var html = $(this).val();
+      var viewableText = $("<span class='col-md-6 food-price editable'>");
+      viewableText.html(html);
+      $(this).replaceWith(viewableText);
+    
+}
 //function to resize the textarea to fit content
 $(document)
     .on('focus.textarea', '.autoExpand', function(){
