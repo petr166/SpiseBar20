@@ -1,0 +1,94 @@
+.foodSection {
+  max-width: 100%;
+}
+
+.food-type {
+  padding: 0px;
+  margin: 0px;
+  font-size: 25px;
+  font-family: 'Playball';
+  display: inline;
+  padding-bottom:2%;
+  vertical-align: top;
+  line-height: 28px;
+}
+
+.food-item {
+  padding-bottom: 2%;
+}
+
+.food-name {
+  padding: 0;
+  margin: 0;
+  font-family: 'Khand';
+  display: inline;
+  vertical-align: top;
+  padding-left: 9%;
+  font-size: 20px;
+}
+
+.food-price {
+  padding: 0;
+  margin: 0;
+  font-size: 20px;
+  font-family: 'Khand';
+  vertical-align: top;
+  text-align: center;
+  float:right;
+  width: 20%;
+  height: 28px;
+  resize: none;
+  overflow: hidden;
+
+}
+
+.food-description {
+  text-align: justify;
+  font-family: 'Didact Gothic', sans-serif;
+  color: #938372;
+  padding-left:9%;
+  font-size: 15px;
+}
+
+.textarea-name {
+  padding: 0;
+  margin: 0;
+  font-family: 'Khand';
+  display: inline;
+  vertical-align: top;
+  padding-left: 0;
+  padding-bottom: 0;
+  margin-left: 9%;
+  font-size: 20px;
+  width: 40%;
+  height: 28px;
+  resize: none;
+  overflow: hidden;
+}
+
+.textarea-description {
+  padding-left: 0;
+  padding-bottom: 0;
+  margin-left: 9%;
+  width: 91%;
+  text-align: justify;
+  font-family: 'Didact Gothic', sans-serif;
+  color: #938372;
+  font-size: 15px;
+  resize: none;
+}
+
+@media(min-width:1200px){
+    .food-name,.food-description{
+        padding-left: 21%;
+    }
+
+    .food-price {
+        margin-right: 15%;
+    }
+
+    .textarea-description, .textarea-name {
+      margin-left: 21%;
+      width: 30%;
+    }
+}

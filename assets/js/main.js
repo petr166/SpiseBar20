@@ -1,7 +1,6 @@
 window.onload = function() {
   showContent();
   smoothScroll();
-  loadImages();
   strongNaviBar();
   setNaviBar();
 };
@@ -23,27 +22,6 @@ function smoothScroll() {
       event.preventDefault();
   });
 }
-
-function loadImages() {
-  var folder = "img/carousel/";
-  var j = 1;
-  $.ajax({
-    url : folder,
-    success: function (data) {
-      $(data).find("a").attr("href", function (i, val) {
-        if( val.match(/\.(jpe?g|png|gif|JPG)$/) ) {
-          $("<div class='item'><img src='"+ folder + val +"'></div>").appendTo('.carousel-inner');
-          $('<li data-target="#carousel" data-slide-to="'+ j +'"></li>').appendTo('.carousel-indicators');
-          j++;
-        }
-      });
-    }
-  });
-  $('.item').first().addClass('active');
-  $('.carousel-indicators > li').first().addClass('active');
-  $('#carousel').carousel();
-}
-
 
 /* Set the width of the side navigation to 250px */
 function openNav() {

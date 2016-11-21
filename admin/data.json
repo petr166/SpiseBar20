@@ -1,0 +1,124 @@
+{
+  "mainCourse" : {
+    "id" : "category_0",
+    "name" : "Hovedretter",
+    "items" : [
+      {
+        "id" : "food_0",
+        "title" : "Tartar",
+        "description" : "Tartar på okseinderlår med cognac, svampemayo, syltede bøgehatte & puffet kartoffel",
+        "price" : 135
+      },
+
+      {
+        "id" : "food_1",
+        "title" : "Vegetarisk rødvinsrisotto",
+        "description" : "Rødvinsrisotto med camembert, jordskokker, syltede løg & brødkarse",
+        "price" : 135
+      },
+
+      {
+        "id" : "food_2",
+        "title" : "Okseonglet",
+        "description" : "Okseonglet med saltbagt knoldselleri, stegte østershatte, brombær & sauce",
+        "price" : 175
+      }
+    ]
+  },
+
+  "tapas" : {
+    "id" : "category_1",
+    "name" : "Småretter",
+    "items" : [
+      {
+        "id" : "food_3",
+        "title" : "Glaceret chorizo",
+        "description" : "",
+        "price" : 60
+      },
+
+      {
+        "id" : "food_4",
+        "title" : "Rejer i persille",
+        "description" : "",
+        "price" : 75
+      },
+
+      {
+        "id" : "food_5",
+        "title" : "Lakserilette",
+        "description" : "",
+        "price" : 85
+      },
+
+      {
+        "id" : "food_6",
+        "title" : "Trøffelost",
+        "description" : "",
+        "price" : 65
+      },
+
+      {
+        "id" : "food_7",
+        "title" : "Pølsebræt",
+        "description" : "",
+        "price" : 95
+      },
+
+      {
+        "id" : "food_8",
+        "title" : "Ostebræt",
+        "description" : "",
+        "price" : 95
+      },
+
+      {
+        "id" : "food_9",
+        "title" : "Hønsesalat",
+        "description" : "",
+        "price" : 80
+      },
+
+      {
+        "id" : "food_10",
+        "title" : "Chorizo",
+        "description" : "",
+        "price" : 60
+      },
+
+      {
+        "id" : "food_11",
+        "title" : "Sortfodsskinke",
+        "description" : "",
+        "price" : 80
+      },
+
+      {
+        "id" : "food_12",
+        "title" : "Lammerilette",
+        "description" : "",
+        "price" : 75
+      },
+
+      {
+        "id" : "food_13",
+        "title" : "Andeterrine",
+        "description" : "",
+        "price" : 85
+      }
+    ]
+  },
+
+  "dessert" : {
+    "id" : "category_2",
+    "name" : "Desserter",
+    "items" : [
+      {
+        "id" : "food_14",
+        "title" : "Bagte friske figner",
+        "description" : "med sabayonnecreme & chokoladeknas",
+        "price" : 60
+      }
+    ]
+  }
+}
