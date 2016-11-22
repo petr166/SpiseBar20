@@ -3,6 +3,7 @@ window.onload = function() {
   smoothScroll();
   strongNaviBar();
   setNaviBar();
+  getMenu();
 };
 
 //fade in the home page
@@ -71,25 +72,50 @@ $(document).ready(function(){
     $("#cocktail-arrow").click(
         function(){
         setTimeout(function(){$("#cocktailSection").hide();}, 1500);
-
-
-
     });
      $("#food-arrow").click(
         function(){
-
-
         setTimeout(function(){$(".foodSection").hide();}, 1500);
-
-
     });
      $("#wine-arrow").click(
         function(){
-
         setTimeout(function(){$("#wineSection").hide();}, 1500);
-
-
     });
-
-
 });
+
+//function to retrieve the menu from data.json
+function getMenu() {
+  $.ajax({
+    'url' : 'admin/menuAPI.php',
+    'type' : 'GET',
+
+    'success' : function(dataIN) {
+      var jsonObj = JSON.parse(dataIN);
+      console.log(jsonObj.data);
+      displayMenu(jsonObj);
+    }
+  });
+}
+
+//function to display the menu from the jsonObj
+function displayMenu(jsonObj) {
+  $.each(jsonObj.data, function(index, category) {
+    console.log(category);
+    $('.menu').append("<div class='row'>" +
+                                  "<center><h4 class='food-type'>" + category.name +
+                                          "</h4></center></div>");
+
+    $.each(category.items, function(index, value) {
+      console.log(value);
+      $('.menu').append("<div class='row food-item'>" +
+                                    "<div class='row'>" +
+                                      "<h4 class='col-md-6 food-name'>" + value.title + "</h4>" +
+                                      "<span class='col-md-6 food-price'>" + value.price + "</span>" +
+                                    "</div>" +
+                                    "<div class='row'>" +
+                                      "<p class='col-md-6 food-description'>" + value.description + "</p>" +
+                                    "</div>" +
+                                  "</div>");
+    });
+  });
+}
