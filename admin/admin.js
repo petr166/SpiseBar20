@@ -18,39 +18,83 @@ function getMenu() {
   });
 }
 
-function updateJSON(itemID, attribute, value) {
-  $.ajax({
+function updateJSON_name(itemID, attribute, value) {
+ 
+    $.ajax({
     'url' : 'menuAPI.php',
     'type' : 'GET',
 
     'success' : function(dataIN) {
       var jsonObj = JSON.parse(dataIN);
-
       $.each(jsonObj.data, function(pos, category) {
           $.each(category.items, function(pos, item) {
             if(item.id == itemID) {
-              item.attribute = value;
-
+              item.title = value;
+        
+            
             }
           });
       });
-
       updateJSONRequest(jsonObj);
     }
   });
 }
 
+function updateJSON_description(itemID, attribute, value) {
+ 
+    $.ajax({
+    'url' : 'menuAPI.php',
+    'type' : 'GET',
+
+    'success' : function(dataIN) {
+      var jsonObj = JSON.parse(dataIN);
+      $.each(jsonObj.data, function(pos, category) {
+          $.each(category.items, function(pos, item) {
+            if(item.id == itemID) {
+              item.description = value;
+        
+            
+            }
+          });
+      });
+      updateJSONRequest(jsonObj);
+    }
+  });
+}
+
+
+function updateJSON_price(itemID, attribute, value) {
+ 
+    $.ajax({
+    'url' : 'menuAPI.php',
+    'type' : 'GET',
+
+    'success' : function(dataIN) {
+      var jsonObj = JSON.parse(dataIN);
+      $.each(jsonObj.data, function(pos, category) {
+          $.each(category.items, function(pos, item) {
+            if(item.id == itemID) {
+              item.price = value;
+        
+            
+            }
+          });
+      });
+      updateJSONRequest(jsonObj);
+    }
+  });
+}
 function updateJSONRequest(jsonObj) {
   $.ajax({
     'url' : 'menuAPI.php',
     'type' : 'POST',
     'data' : {
-      'newData' : jsonObj
+      'newData' : JSON.stringify(jsonObj.data)
     },
 
     'success' : function(dataIN) {
-      var jsonObj = JSON.parse(dataIN);
-      console.log("Post response: " + jsonObj.status);
+     var jsonObject = JSON.parse(dataIN);
+     console.log(jsonObject.status);
     }
   });
 }
@@ -111,25 +155,28 @@ function onBlurName(){
         var viewableText = $("<h4 class='col-md-6 food-name editable'>");
         viewableText.html(html);
         $(this).replaceWith(viewableText);
-
-        updateJSON($(this).attr('id'), 'title', html);
+        
+        updateJSON_name(viewableText.parent().parent().attr('id'), 'title', html);
 
 
 
 }
+
 function onBlurDescription(){
       var html = $(this).val();
       var viewableText = $("<p class='col-md-6 food-description editable'>");
       viewableText.html(html);
       $(this).replaceWith(viewableText);
+ updateJSON_description(viewableText.parent().parent().attr('id'), 'title', html);
 
 }
+
 function onBlurPrice(){
      var html = $(this).val();
       var viewableText = $("<span class='col-md-6 food-price editable'>");
       viewableText.html(html);
       $(this).replaceWith(viewableText);
-
+     updateJSON_price(viewableText.parent().parent().attr('id'), 'title', html);
 }
 //function to resize the textarea to fit content
 $(document)

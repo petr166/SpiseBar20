@@ -22,6 +22,7 @@
     case 'POST':
       try {
         $jsonObj = $_POST['newData'];
+        
       }
       catch(Exception $e) {
         $badResp = '{
@@ -32,7 +33,7 @@
         echo $badResp;
         die;
       }
-
+      
       $file = "data.json"; //store the file path
       file_put_contents($file, $jsonObj); //overwrite the file with the updated data
 
