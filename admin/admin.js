@@ -19,7 +19,7 @@ function getMenu() {
 }
 
 function updateJSON_name(itemID, attribute, value) {
- 
+
     $.ajax({
     'url' : 'menuAPI.php',
     'type' : 'GET',
@@ -30,8 +30,8 @@ function updateJSON_name(itemID, attribute, value) {
           $.each(category.items, function(pos, item) {
             if(item.id == itemID) {
               item.title = value;
-        
-            
+
+
             }
           });
       });
@@ -41,7 +41,7 @@ function updateJSON_name(itemID, attribute, value) {
 }
 
 function updateJSON_description(itemID, attribute, value) {
- 
+
     $.ajax({
     'url' : 'menuAPI.php',
     'type' : 'GET',
@@ -52,8 +52,8 @@ function updateJSON_description(itemID, attribute, value) {
           $.each(category.items, function(pos, item) {
             if(item.id == itemID) {
               item.description = value;
-        
-            
+
+
             }
           });
       });
@@ -64,7 +64,7 @@ function updateJSON_description(itemID, attribute, value) {
 
 
 function updateJSON_price(itemID, attribute, value) {
- 
+
     $.ajax({
     'url' : 'menuAPI.php',
     'type' : 'GET',
@@ -75,8 +75,8 @@ function updateJSON_price(itemID, attribute, value) {
           $.each(category.items, function(pos, item) {
             if(item.id == itemID) {
               item.price = value;
-        
-            
+
+
             }
           });
       });
@@ -153,10 +153,15 @@ function onBlurName(){
 
         var html = $(this).val();
         var viewableText = $("<h4 class='col-md-6 food-name editable'>");
-        viewableText.html(html);
+        if(!html) {
+          viewableText.html("Insert title");
+        }
+        else {
+          viewableText.html(html);
+        }
         $(this).replaceWith(viewableText);
-        
-        updateJSON_name(viewableText.parent().parent().attr('id'), 'title', html);
+
+        updateJSON_name(viewableText.parent().parent().attr('id'), 'title', viewableText);
 
 
 
@@ -165,18 +170,28 @@ function onBlurName(){
 function onBlurDescription(){
       var html = $(this).val();
       var viewableText = $("<p class='col-md-6 food-description editable'>");
-      viewableText.html(html);
+      if(!html) {
+        viewableText.html("Insert description");
+      }
+      else {
+        viewableText.html(html);
+      }
       $(this).replaceWith(viewableText);
- updateJSON_description(viewableText.parent().parent().attr('id'), 'title', html);
+ updateJSON_description(viewableText.parent().parent().attr('id'), 'title', viewableText);
 
 }
 
 function onBlurPrice(){
      var html = $(this).val();
       var viewableText = $("<span class='col-md-6 food-price editable'>");
-      viewableText.html(html);
+      if(!html) {
+        viewableText.html("Insert price");
+      }
+      else {
+        viewableText.html(html);
+      }
       $(this).replaceWith(viewableText);
-     updateJSON_price(viewableText.parent().parent().attr('id'), 'title', html);
+     updateJSON_price(viewableText.parent().parent().attr('id'), 'title', viewableText);
 }
 //function to resize the textarea to fit content
 $(document)
