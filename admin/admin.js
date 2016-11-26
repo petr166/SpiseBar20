@@ -3,7 +3,6 @@ window.onload = function() {
   convertIntoInput();
 };
 
-
 //function to retrieve the menu from data.json
 function getMenu() {
   $.ajax({
@@ -12,14 +11,12 @@ function getMenu() {
 
     'success' : function(dataIN) {
       var jsonObj = JSON.parse(dataIN);
-      console.log(jsonObj.data);
       displayMenu(jsonObj);
     }
   });
 }
 
 function updateJSON_name(itemID, attribute, value) {
-
     $.ajax({
     'url' : 'menuAPI.php',
     'type' : 'GET',
@@ -30,8 +27,6 @@ function updateJSON_name(itemID, attribute, value) {
           $.each(category.items, function(pos, item) {
             if(item.id == itemID) {
               item.title = value;
-
-
             }
           });
       });
@@ -41,7 +36,6 @@ function updateJSON_name(itemID, attribute, value) {
 }
 
 function updateJSON_description(itemID, attribute, value) {
-
     $.ajax({
     'url' : 'menuAPI.php',
     'type' : 'GET',
@@ -52,8 +46,6 @@ function updateJSON_description(itemID, attribute, value) {
           $.each(category.items, function(pos, item) {
             if(item.id == itemID) {
               item.description = value;
-
-
             }
           });
       });
@@ -62,9 +54,7 @@ function updateJSON_description(itemID, attribute, value) {
   });
 }
 
-
 function updateJSON_price(itemID, attribute, value) {
-
     $.ajax({
     'url' : 'menuAPI.php',
     'type' : 'GET',
@@ -75,8 +65,6 @@ function updateJSON_price(itemID, attribute, value) {
           $.each(category.items, function(pos, item) {
             if(item.id == itemID) {
               item.price = value;
-
-
             }
           });
       });
@@ -84,6 +72,7 @@ function updateJSON_price(itemID, attribute, value) {
     }
   });
 }
+
 function updateJSONRequest(jsonObj) {
   $.ajax({
     'url' : 'menuAPI.php',
@@ -94,23 +83,20 @@ function updateJSONRequest(jsonObj) {
 
     'success' : function(dataIN) {
      var jsonObject = JSON.parse(dataIN);
-     console.log(jsonObject.status);
     }
   });
 }
 
 //function to display the menu from the jsonObj
 function displayMenu(jsonObj) {
-  $('.container-fluid').append("<div class='row foodSection'></div>")
+  $('.container-fluid').append("<div class='row' id='food_section'></div>")
   $.each(jsonObj.data, function(index, category) {
-    console.log(category);
-    $('.foodSection').append("<div class='row' id='" + category.id + "'>" +
+    $('#food_section').append("<div class='row' id='" + category.id + "'>" +
                                   "<center><h4 class='food-type'>" + category.name +
                                           "</h4></center></div>");
 
     $.each(category.items, function(index, value) {
-      console.log(value);
-      $('.foodSection').append("<div class='row food-item' id='" + value.id + "'>" +
+      $('#food_section').append("<div class='row food-item' id='" + value.id + "'>" +
                                     "<div class='row'>" +
                                       "<h4 class='col-md-6 food-name editable'>" + value.title + "</h4>" +
                                       "<span class='col-md-6 food-price editable'>" + value.price + "</span>" +
@@ -130,8 +116,6 @@ function convertIntoInput () {
     if (~str.indexOf("food-name")) {
       var textarea = $("<textarea class='col-md-6 textarea-name autoExpand' rows='1' data-min-rows='2'>");
          textarea.blur(onBlurName);
-
-
     }
 
     if (~str.indexOf("food-price")) {
@@ -149,8 +133,8 @@ function convertIntoInput () {
 
   });
 }
-function onBlurName(){
 
+function onBlurName(){
         var html = $(this).val();
         var viewableText = $("<h4 class='col-md-6 food-name editable'>");
         if(!html) {
@@ -160,11 +144,7 @@ function onBlurName(){
           viewableText.html(html);
         }
         $(this).replaceWith(viewableText);
-
         updateJSON_name(viewableText.parent().parent().attr('id'), 'title', viewableText);
-
-
-
 }
 
 function onBlurDescription(){
@@ -177,8 +157,7 @@ function onBlurDescription(){
         viewableText.html(html);
       }
       $(this).replaceWith(viewableText);
- updateJSON_description(viewableText.parent().parent().attr('id'), 'title', viewableText);
-
+      updateJSON_description(viewableText.parent().parent().attr('id'), 'title', viewableText);
 }
 
 function onBlurPrice(){
@@ -193,6 +172,7 @@ function onBlurPrice(){
       $(this).replaceWith(viewableText);
      updateJSON_price(viewableText.parent().parent().attr('id'), 'title', viewableText);
 }
+
 //function to resize the textarea to fit content
 $(document)
     .on('focus.textarea', '.autoExpand', function(){

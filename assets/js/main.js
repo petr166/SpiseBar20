@@ -42,7 +42,7 @@ function setNaviBar() {
 }
 
 function strongNaviBar() {
-  var aboutSectionPos = $('#aboutSection').offset().top;
+  var aboutSectionPos = $('#about_section').offset().top;
   if ($(window).scrollTop() > aboutSectionPos-50) {
     $('#navibar').addClass('strong');
     $('#my_nav_brand').addClass('displayed');
@@ -53,33 +53,33 @@ function strongNaviBar() {
 }
 
 $(document).ready(function(){
-    $("#foodButton").click(function(){
-         $("#cocktailSection").hide();
-         $("#wineSection").hide();
-         $(".foodSection").slideDown("slow");
+    $("#food_button").click(function(){
+         $("#cocktail_section").hide();
+         $("#wine_section").hide();
+         $("#food_section").slideDown("slow");
 
     });
-    $("#wineButton").click(function(){
-        $("#cocktailSection").hide();
-        $(".foodSection").hide();
-        $("#wineSection").slideDown("slow");
+    $("#wine_button").click(function(){
+        $("#cocktail_section").hide();
+        $("#food_section").hide();
+        $("#wine_section").slideDown("slow");
     });
-    $("#cocktailButton").click(function(){
-        $("#wineSection").hide();
-        $(".foodSection").hide();
-        $("#cocktailSection").slideDown("slow");
+    $("#cocktail_button").click(function(){
+        $("#wine_section").hide();
+        $("#food_section").hide();
+        $("#cocktail_section").slideDown("slow");
     });
-    $("#cocktail-arrow").click(
+    $("#cocktail_arrow").click(
         function(){
-        setTimeout(function(){$("#cocktailSection").hide();}, 1500);
+        setTimeout(function(){$("#cocktail_section").hide();}, 1500);
     });
-     $("#food-arrow").click(
+     $("#food_arrow").click(
         function(){
-        setTimeout(function(){$(".foodSection").hide();}, 1500);
+        setTimeout(function(){$("#food_section").hide();}, 1500);
     });
-     $("#wine-arrow").click(
+     $("#wine_arrow").click(
         function(){
-        setTimeout(function(){$("#wineSection").hide();}, 1500);
+        setTimeout(function(){$("#wine_section").hide();}, 1500);
     });
 });
 
@@ -88,10 +88,8 @@ function getMenu() {
   $.ajax({
     'url' : 'admin/menuAPI.php',
     'type' : 'GET',
-
     'success' : function(dataIN) {
       var jsonObj = JSON.parse(dataIN);
-      console.log(jsonObj.data);
       displayMenu(jsonObj);
     }
   });
@@ -100,7 +98,6 @@ function getMenu() {
 //function to display the menu from the jsonObj
 function displayMenu(jsonObj) {
   $.each(jsonObj.data, function(index, category) {
-    console.log(category);
     $('.menu').append("<div class='row'>" +
                                   "<center><h4 class='food-type'>" + category.name +
                                           "</h4></center></div>");
@@ -110,7 +107,7 @@ function displayMenu(jsonObj) {
       $('.menu').append("<div class='row food-item'>" +
                                     "<div class='row'>" +
                                       "<h4 class='col-md-6 food-name'>" + value.title + "</h4>" +
-                                      "<span class='col-md-6 food-price'>" + value.price + "</span>" +
+                                      "<span class='col-md-6 food-price'>" + value.price + " kr</span>" +
                                     "</div>" +
                                     "<div class='row'>" +
                                       "<p class='col-md-6 food-description'>" + value.description + "</p>" +

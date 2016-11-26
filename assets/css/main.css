@@ -24,20 +24,19 @@
   background-position: 50%;
   background-repeat: no-repeat;
   background-size: cover;
-
   padding-bottom: 5%;
   padding-top: 5%;
 }
 
 .overview-box {
   font-weight: 400;
-    font-family: 'Roboto', sans-serif;
-    text-transform: uppercase;
-    font-size: 2.2vh;
-    letter-spacing: 0.1em;
-    line-height: 4vh;
-    text-align: center;
-    margin-top: 5vh;
+  font-family: 'Roboto', sans-serif;
+  text-transform: uppercase;
+  font-size: 2.2vh;
+  letter-spacing: 0.1em;
+  line-height: 4vh;
+  text-align: center;
+  margin-top: 5vh;
 }
 
 @media (orientation: portrait) {
@@ -116,141 +115,13 @@
   }
 }
 
-/*
-@media only screen and (min-width: 360px) {
-  .overview-box {
-    font-size: 14px;
-    line-height: 28px;
-  }
-
-  #main_title {
-    font-size: 5.5em;
-  }
-}
-
-@media only screen and (min-width: 400px) {
-  .overview-box {
-    font-size: 16px;
-    line-height: 34px;
-  }
-
-  #main_title {
-    font-size: 5.6em;
-  }
-}
-
-@media only screen and (min-width: 400px) and (max-height: 320px) {
-  .overview-box {
-    font-size: 10px;
-    line-height: 12px;
-  }
-
-  #main_title {
-    font-size: 5.4em;
-  }
-
-  #book_butt {
-    font-size: 6px;
-  }
-
-  #down_arrow {
-    margin-top: .5em;
-  }
-}
-
-@media only screen and (min-width: 400px) and (min-height: 360px) and (max-height: 420px) {
-  .overview-box {
-    font-size: 10px;
-    line-height: 18px;
-  }
-
-  #main_title {
-    font-size: 5.6em;
-  }
-
-  #book_butt {
-    font-size: 8px;
-  }
-}
-
-@media only screen and (min-width: 768px) and (min-height: 1024px) {
-  .overview-box {
-    font-size: 17px;
-    line-height: 30px;
-    margin-top: 10px;
-  }
-
-  #main_title {
-    font-size: 5.7em;
-  }
-}
-
-@media only screen and (min-width: 768px) and (max-height: 1020px) {
-  .overview-box {
-    font-size: 17px;
-    line-height: 30px;
-    margin-top: 10px;
-  }
-
-  #main_title {
-    font-size: 5.6em;
-  }
-}
-
-@media only screen and (min-width: 1280px) {
-  .overview-box {
-    font-size: 18px;
-    line-height: 35px;
-    margin-top: 30px;
-  }
-
-  #main_title {
-    font-size: 5.6em;
-  }
-}
-
-@media only screen and (min-width: 1440px) {
-  .overview-box {
-    font-size: 20px;
-    line-height: 40px;
-    margin-top: 35px;
-  }
-
-  #main_title {
-    font-size: 5.6em;
-  }
-
-  #book_butt {
-    font-size: 14px;
-  }
-}
-
-@media only screen and (min-width: 1920px) {
-  .overview-box {
-    font-size: 22px;
-    line-height: 45px;
-    margin-top: 40px;
-  }
-
-  #main_title {
-    font-size: 5.6em;
-  }
-
-  #book_butt {
-    font-size: 21px;
-  }
-}
-
-*/
-
-
 /* ABOUT SECTION AND CAROUSEL CSS*/
-#aboutSection {
+#about_section {
   min-height: 100vh;
   color: #fff;
 }
 
-#about-col {
+#about_col {
   min-height: 50vh;
   height: 100vh;
   margin: 0 auto;
@@ -280,30 +151,30 @@
   width: 100%;
 }
 
+/* Devices smaller than 320px width */
 @media (max-width: 320px){
   #about_text_box .section-title {
     font-size: 1.6em;
   }
 
+  #about_text_box .section-text {
+    font-size: 1.1em;
+  }
 
-    #about_text_box .section-text {
-      font-size: 1.1em;
-    }
-
-  #aboutSection   {
+  #about_section {
     display: table;
   }
 
-  #about-col {
+  #about_col {
     display: table-footer-group;
   }
 
-  #carousel-col {
+  #carousel_col {
     display: table-header-group;
     float: none;
   }
 
-  #carousel-row {
+  #carousel_row {
     margin: 0px;
     padding: 0px;
   }
@@ -315,20 +186,20 @@
     font-size: 1.6em;
   }
 
-  #aboutSection   {
+  #about_section {
     display: table;
   }
 
-  #about-col {
+  #about_col {
     display: table-footer-group;
   }
 
-  #carousel-col {
+  #carousel_col {
     display: table-header-group;
     float: none;
   }
 
-  #carousel-row {
+  #carousel_row {
     margin: 0px;
     padding: 0px;
   }
@@ -344,21 +215,21 @@
     font-size: 1em;
   }
 
-  #aboutSection   {
+  #about_section {
     display: table;
   }
 
-  #about-col {
+  #about_col {
     display: table-footer-group;
     height: auto;
   }
 
-  #carousel-col {
+  #carousel_col {
     display: table-header-group;
     float: none;
   }
 
-  #carousel-row {
+  #carousel_row {
     margin: 0px;
     padding: 0px;
   }
@@ -373,20 +244,20 @@
     font-size: 1.3em;
   }
 
-  #aboutSection   {
+  #about_section {
     display: table;
   }
 
-  #about-col {
+  #about_col {
     display: table-footer-group;
   }
 
-  #carousel-col {
+  #carousel_col {
     display: table-header-group;
     float: none;
   }
 
-  #carousel-row {
+  #carousel_row {
     margin: 0px;
     padding: 0px;
   }
@@ -398,24 +269,20 @@
     font-size: 2em;
   }
 
-  #about_text_box .section-text {
-
-  }
-
-  #aboutSection   {
+  #about_section {
     display: table;
   }
 
-  #about-col {
+  #about_col {
     display: table-footer-group;
   }
 
-  #carousel-col {
+  #carousel_col {
     display: table-header-group;
     float: none;
   }
 
-  #carousel-row {
+  #carousel_row {
     margin: 0px;
     padding: 0px;
   }
@@ -428,28 +295,24 @@
     font-size: 2.5em;
   }
 
-  #about_text_box .section-text {
-
-  }
-
   #about_text_box {
     margin: 2.5em 5em;
   }
 
-  #aboutSection   {
+  #about_section {
     display: table;
   }
 
-  #about-col {
+  #about_col {
     display: table-footer-group;
   }
 
-  #carousel-col {
+  #carousel_col {
     display: table-header-group;
     float: none;
   }
 
-  #carousel-row {
+  #carousel_row {
     margin: 0px;
     padding: 0px;
   }
@@ -465,11 +328,11 @@
       font-size: 1.3em;
     }
 
-    #aboutSection   {
+    #about_section {
       display: flex;
     }
 
-    #carousel-row {
+    #carouse_row {
       margin-right: -15px;
       margin-left: -15px;
     }
@@ -483,7 +346,7 @@
     }
   }
 
-    /* Large desktops and laptops */
+/* Large desktops and laptops */
 @media (min-width: 1200px) {
   #about_text_box .section-title {
     font-size: 2em;
@@ -493,11 +356,11 @@
     font-size: 1.3em;
   }
 
-  #aboutSection   {
+  #about_section   {
     display: flex;
   }
 
-  #carousel-row {
+  #carousel_row {
     margin-right: -15px;
     margin-left: -15px;
   }
@@ -519,7 +382,7 @@
   letter-spacing: 0.1em;
 }
 
-.section-title::after {
+.section-title:after {
   display:block;
   clear:both;
   content : "";
@@ -528,12 +391,11 @@
   bottom  : 0;
   max-width:2.2em;
   height  : 1px;
-  width   : 50%;  /* or 100px */
+  width   : 50%;
   border-bottom:2px solid white;
   margin:0 auto;
   padding:15px 0px;
 }
-
 
 .menu-category-name {
   font-family: 'Playball', cursive;
@@ -541,48 +403,49 @@
   font-size: 6vh;
 }
 
-.red-wine, .white-wine, .rose-wine {
-text-align: center;
+#red_wine, #white_wine, #rose_wine {
+  text-align: center;
 }
 
 
-@media(min-width:992px){
-    .red-wine,#cocktails-ro{
+@media(min-width:992px) {
+  #red_wine, #cocktails_ro {
     border-right: 1px solid #ccc;
-    }
-
+  }
 }
-#cocktailSection, .foodSection, #wineSection{
-    display: none;
-    padding:50px;
 
+#cocktail_section, #food_section, #wine_section {
+  display: none;
+  padding:50px;
 }
-.wine-item, .cocktail-item {
+
+.drink-item {
   padding-top: 4%;
   width: 100%;
   padding-left: 9%;
-
 }
 
-.beer-item{
+.beer-item {
     width:100%;
     padding-left: 9%;
     padding-top:1.5%;;
 }
-#bottle-beers{
+
+#bottle_beers {
     padding-top:4%;
 }
-.cocktail-name{
+
+.cocktail-name {
     text-transform: uppercase;
 }
+
 .drink-type{
     font-family: 'Playball', cursive;
     font-weight: 500;
     font-size: 30px;
 }
 
-.wine-name, .cocktail-name, .beer-name {
-
+.drink-name {
   margin: 0px;
   font-size: 18px;
   font-family: 'Khand';
@@ -590,129 +453,85 @@ text-align: center;
   vertical-align: top;
   line-height: 28px;
   text-align: left;
-    float: left;
+  float: left;
 }
 
-.wine-price, .cocktail-price, .beer-price {
+.drink-price {
   font-family: 'Khand';
-    font-size:18px;
+  font-size:18px;
   display: inline;
   vertical-align: top;
   line-height: 28px;
   float: right;
-
 }
+
 @media(min-width: 768px){
-    .beer-name, .beer-price, .cocktail-name, .cocktail-price, .wine-name, .wine-price{
+    .drink-name, .drink-price {
         font-size:20px;
     }
-
-
 }
-@media(min-width: 992px){
-    .beer-name, .beer-price, .cocktail-name, .cocktail-price, wine-name, .wine-price{
+
+@media(min-width: 992px) {
+    .drink-name, .drink-price {
         font-size:20px;
     }
     .beer-item{
         width:110%;
     }
-
-
-
 }
-@media(min-width:1200px){
-    .beer-name, .beer-price, .cocktail-name, .cocktail-price, .wine-name, .wine-price{
+
+@media(min-width:1200px) {
+    .drink-name, .drink-price {
         font-size:20px;
+    }
 
-    }
-    .cocktails-row{
-        padding-left:50px;
-        padding-right:50px;
-    }
-    .red-wine, white-wine{
+    .cocktails-row {
         padding-left:50px;
         padding-right:50px;
     }
 
-
+    #red_wine, #white_wine {
+        padding-left:50px;
+        padding-right:50px;
+    }
 }
 
-.wine-description, .cocktail-description, .beer-description {
+.drink-description {
   font-family: 'Didact Gothic', sans-serif;
-    font-size:13px;
+  font-size:13px;
   color: #938372;
-    float: left;
-    text-align: left;
-
-  /*padding-left: 7%;*/
+  float: left;
+  text-align: left;
 }
 
-
-#sbLogo {
-  max-width: 10px;
-}
-#logo{
-  text-align:center;
-}
-
-
-.wine-item .wine-name {
-    display: inline-block;
-    padding-right: 10px;
-    max-width: 75%;
-    margin: 0 0 15px;
-}
-.wine-item .wine-price{
-
-padding-left: 10px;
-right: 0;
-position: absolute;
-}
-
-/*=
-.wine-item .wine-price{
-
-padding-left: 10px;
-right: 0;
-position: absolute;
-margin-top: -3px;
-}
-
-.wine-item .wine-description {
-    display: block;
-    clear: both;
-    color: #938372;
-}
-
-
-.wine-price {
-  font-size: 3vh;
-  font-family: 'Khand';
-  display: inline;
-  vertical-align: top;
-  line-height: 28px;
-  text-align: right;
-}
-
-.wine-description {
-  font-family: 'Didact Gothic', sans-serif;
-  color: #938372;
-  font-size: 2vh;
-  text-align: justify;
-  /*padding-left: 7%;*/
-}*/
-
-.rose-wine div {
-  padding-top: 0px;
-}
-
-#sbLogo {
+.sb-logo {
   max-width: 300px;
   height: auto;
 }
 
-#sbLogoDiv {
+#logo {
+  text-align:center;
+}
+
+#sb_logo_div {
   padding: 13% 0 0 0;
+}
+
+.drink-item .drink-name {
+  display: inline-block;
+  padding-right: 10px;
+  max-width: 75%;
+  margin: 0 0 15px;
+}
+
+.drink-item .drink-price {
+  padding-left: 10px;
+  right: 0;
+  position: absolute;
+}
+
+#rose_wine div {
+  padding-top: 0px;
 }
 
 #rose {
@@ -747,7 +566,6 @@ margin-top: -3px;
     }
 }
 
-
 .section-text {
   font-family: 'Didact Gothic', sans-serif;
   font-size: 2.9vh;
@@ -767,29 +585,30 @@ margin-top: -3px;
 #menu_buttons > button:hover {
   background-color: rgba(64, 46, 34, 1);
 }
-@media(min-width:768px){
-    #menuPresentation{
+
+@media(min-width:768px) {
+    #menu_presentation {
         margin:2.5em 5em;
 
     }
-    #menu_buttons > a{
+    #menu_buttons > a {
         width:130px;
         font-size:22px;
     }
 }
 
 .sidenav {
-    height: 100%;
-    width: 0;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    right: 0;
-    background: radial-gradient(transparent, #402E22);
-    background-color: rgba(120, 86, 64, .9);
-    overflow: hidden;
-    padding-top: 40px;
-    transition: 0.5s;
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  background: radial-gradient(transparent, #402E22);
+  background-color: rgba(120, 86, 64, .9);
+  overflow: hidden;
+  padding-top: 40px;
+  transition: 0.5s;
 }
 
 .sidebar-nav {
@@ -798,30 +617,30 @@ margin-top: -3px;
 }
 
 .sidenav a {
-    padding: 8px 8px 8px 8px;
-    text-decoration: none;
-    font-weight: 700;
-    font-family: 'Roboto', sans-serif;
-    font-size: 18px;
-    color: white;
-    display: block;
-    transition: 0.3s
+  padding: 8px 8px 8px 8px;
+  text-decoration: none;
+  font-weight: 700;
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+  color: white;
+  display: block;
+  transition: 0.3s
 }
 
-.sidenav a:hover, .offcanvas a:focus{
-    color: rgba(255, 255, 255, .5);
+.sidenav a:hover, .offcanvas a:focus {
+  color: rgba(255, 255, 255, .5);
 }
 
 .sidenav .closebtn {
-    position: absolute;
-    top: 0;
-    right: 25px;
-    font-size: 36px;
-    margin-left: 50px;
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
 }
 
-    .sidenav {padding-top: 60px;}
-    .sidenav a {font-size: 21px;}
+.sidenav {padding-top: 60px;}
+.sidenav a {font-size: 21px;}
 
 @media (min-width: 768px) {
   .sidenav {padding-top: 60px;}
@@ -832,7 +651,7 @@ margin-top: -3px;
   float: right;
 }
 
-.navbar-default .navbar-brand{
+.navbar-default .navbar-brand {
   color: white;
   font-weight: 700;
   font-family: 'Roboto', sans-serif;
@@ -870,7 +689,7 @@ margin-top: -3px;
     padding: 0 10px;
   }
 
-  .navbar-default .navbar-brand{
+  .navbar-default .navbar-brand {
     font-size: 18px;
   }
 
@@ -900,7 +719,7 @@ margin-top: -3px;
   opacity: 1;
 }
 
-.foodSection {
+#food_section {
 max-width: 100%;
 }
 
@@ -921,8 +740,6 @@ max-width: 100%;
   padding-bottom:2%;
   vertical-align: top;
   line-height: 28px;
-  /*padding-left: 20.3%;*/
-
 }
 
 .food-item {
@@ -947,7 +764,6 @@ max-width: 100%;
   vertical-align: top;
   text-align: center;
   float:right;
-
 }
 
 .food-description {
@@ -957,14 +773,14 @@ max-width: 100%;
   padding-left:9%;
   font-size: 15px;
 }
-@media(min-width:1200px){
+
+@media(min-width:1200px) {
     .food-name,.food-description{
         padding-left: 21%;
     }
-
 }
 
-.contactSection {
+#contact_section {
   background-color: #785640;
 }
 
@@ -1000,17 +816,16 @@ max-width: 100%;
 }
 
 .fa-facebook-square:hover, .fa-instagram:hover,
-.fa-envelope:hover, .fa-smile-o:hover  {
+.fa-envelope:hover, .fa-smile-o:hover {
   text-decoration: none;
   color: #402E22;
 }
 
-@media(max-width:767px){
-
+@media(max-width:767px) {
   .contact-address, .contact-address-name,
   .contact-phone {
     display: block;
-  }
+ }
 
   .separation-line {
     display: none;
@@ -1022,15 +837,13 @@ max-width: 100%;
 }
 
 @media(min-width:768px) {
-
   .contact-address, .contact-address-name,
   .contact-phone {
     display: inline;
   }
-
 }
 
-@media(min-width:992px){
+@media(min-width:992px) {
   .contact-icons {
     margin-right: 0;
   }
@@ -1041,29 +854,29 @@ max-width: 100%;
   }
 }
 
-.up-arrow{
-
+.up-arrow {
   margin-top: 1.2em;
   font-size: 2em;
   border-color:transparent;
   background-color: transparent;
 }
-.up-arrow:hover, .up-arrow:focus, .up-arrow:onclick{
 
-    text-decoration: none;
-    color:transparent;
-    border-color:transparent;
-    background-color:transparent;
+.up-arrow:hover, .up-arrow:focus, .up-arrow:onclick {
+  text-decoration: none;
+  color: transparent;
+  border-color: transparent;
+  background-color: transparent;
 }
-#wine-arrow:active, #wine-arrow:hover, #cocktail-arrow:active, #cocktail-arrow:hover, #food-arrow:active, #food-arrow:hover{
-      text-decoration: none;
-    color:transparent;
-    border-color:transparent;
-    background-color:transparent;
-}
-.glyphicon-menu-up{
-    color:#785640;
 
+#wine_arrow:active, #wine_arrow:hover, #cocktail_arrow:active, #cocktail_arrow:hover, #food_arrow:active, #food_arrow:hover {
+  text-decoration: none;
+  color:transparent;
+  border-color:transparent;
+  background-color:transparent;
+}
+
+.glyphicon-menu-up {
+  color:#785640;
 }
 
 .address-map-link, .address-map-link:hover,

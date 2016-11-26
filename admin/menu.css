@@ -1,5 +1,15 @@
-.foodSection {
+#food_section {
   max-width: 100%;
+}
+
+h1 {
+  font-weight: 400;
+  font-family: 'Roboto', sans-serif;
+  text-transform: uppercase;
+  font-size: 2.2em;
+  letter-spacing: 0.1em;
+  line-height: 4vh;
+  text-align: center;
 }
 
 .food-type {
@@ -39,7 +49,6 @@
   height: 28px;
   resize: none;
   overflow: hidden;
-
 }
 
 .food-description {
