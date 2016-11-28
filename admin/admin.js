@@ -144,7 +144,7 @@ function onBlurName(){
           viewableText.html(html);
         }
         $(this).replaceWith(viewableText);
-        updateJSON_name(viewableText.parent().parent().attr('id'), 'title', viewableText);
+        updateJSON_name(viewableText.parent().parent().attr('id'), 'title', viewableText.html());
 }
 
 function onBlurDescription(){
@@ -157,7 +157,7 @@ function onBlurDescription(){
         viewableText.html(html);
       }
       $(this).replaceWith(viewableText);
-      updateJSON_description(viewableText.parent().parent().attr('id'), 'title', viewableText);
+      updateJSON_description(viewableText.parent().parent().attr('id'), 'title', viewableText.html());
 }
 
 function onBlurPrice(){
@@ -170,7 +170,7 @@ function onBlurPrice(){
         viewableText.html(html);
       }
       $(this).replaceWith(viewableText);
-     updateJSON_price(viewableText.parent().parent().attr('id'), 'title', viewableText);
+     updateJSON_price(viewableText.parent().parent().attr('id'), 'title', viewableText.html());
 }
 
 //function to resize the textarea to fit content
