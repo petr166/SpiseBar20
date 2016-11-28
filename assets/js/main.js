@@ -103,7 +103,6 @@ function displayMenu(jsonObj) {
                                           "</h4></center></div>");
 
     $.each(category.items, function(index, value) {
-      console.log(value);
       $('.menu').append("<div class='row food-item'>" +
                                     "<div class='row'>" +
                                       "<h4 class='col-md-6 food-name'>" + value.title + "</h4>" +
