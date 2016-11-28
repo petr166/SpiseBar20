@@ -674,15 +674,6 @@
   background-color: rgba(120, 86, 64, .99);
 }
 
-#navright_span {
-  opacity: 0;
-  padding-right: 0;
-}
-
-#navright_span:hover {
-  color: white;
-}
-
 @media (min-width: 768px) {
   #navibar {
     height: 52px;
@@ -691,10 +682,6 @@
 
   .navbar-default .navbar-brand {
     font-size: 18px;
-  }
-
-  #navright_span {
-    opacity: 1;
   }
 }
 
