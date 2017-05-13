@@ -4,9 +4,9 @@
 
 > [Spise/Bar20](http://sb20.dk/) restaurant website with a wood theme flavour
 
-Have a look at http://petrub.com/spise-bar20/
+* Have a look at http://petrub.com/spise-bar20/
 
-The website is also live on restaurant's domain at http://sb20.dk/
+* The website is also live on restaurant's domain at http://sb20.dk/
 
 # Features
 
@@ -24,7 +24,7 @@ Using [php](http://php.net/manual/en/intro-whatis.php), we write the changes to 
 
 * [Php](http://php.net/manual/en/intro-whatis.php) - scripting language which was used manage restaurant menu data | more about it under here
 
-<img src="./preview/mobile-preview.png" width="200px" alt="Preview"/>
+<img src="./preview/mobile-preview.png" width="280px" alt="Preview"/>
 
 # Motivation
 
