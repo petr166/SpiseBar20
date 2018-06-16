@@ -2,11 +2,9 @@
 
 # Spise/Bar 20 Website
 
-> [Spise/Bar20](http://sb20.dk/) restaurant website with a wood theme flavour
+> Spise/Bar20 restaurant website with a wood theme flavour
 
 * Have a look at http://petrub.com/spise-bar20/
-
-* The website is also live on restaurant's domain at http://sb20.dk/
 
 # Features
 
@@ -29,7 +27,5 @@ Using [php](http://php.net/manual/en/intro-whatis.php), we write the changes to 
 # Motivation
 
 This is a school project, that consists in building a product for a real company. So our team found this cozy restaurant that was in need of a presentation website and took the challenge.
-
-> *Update*: The company was happy with our product and decided to use it as their presentation website. So proud! You can check it out at http://sb20.dk/
 
 ![Preview](./preview/desktop-preview1.png)
